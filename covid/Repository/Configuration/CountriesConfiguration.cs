@@ -13,6 +13,8 @@ namespace Persistence.Configuration
         {
             base.Configure(builder);
             builder.ToTable("Countries", "dbo");
+
+            builder.Property(x => x.Description).HasColumnName("name");
         }
     }
 }

@@ -89,8 +89,6 @@ C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\ru\Mi
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.csproj.CoreCompileInputs.cache
-C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.csproj.CopyComplete
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
@@ -137,3 +135,7 @@ C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\Servi
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\Services.pdb
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\Model.pdb
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\Persistence.pdb
+C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.csproj.CoreCompileInputs.cache
+C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.MvcApplicationPartsAssemblyInfo.cache

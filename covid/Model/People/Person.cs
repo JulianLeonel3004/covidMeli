@@ -14,7 +14,6 @@ namespace Model.People
         public string IdDna { get; set; }
         public Country Country { get; set; }
         public Result Result { get; set; }
-        public List<Dna> Dna { get; set; }
 
     }
 }

@@ -8,7 +8,7 @@ namespace Persistence.Repositories.Interfaces
 {
     public interface IPeopleRepository
     {
-      IList<Person> GetAllAsync();
+        Task<IList<Person>> GetAllAsync();
      // Task<Person> GetAsync(string id);
        
     }

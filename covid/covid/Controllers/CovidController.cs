@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Model.People;
+using Services.DTO_s;
 using Services.Interfaces;
 
 namespace covid.Controllers
@@ -28,11 +29,12 @@ namespace covid.Controllers
         //{
         //    return "corre";
         //}
-        public async Task<string> Get()
+        public async Task<IList<PersonDTO>> Get()
         {
-             var collection =  peopleService.GetAllAsync();
+             var collection = await peopleService.GetAllAsync();
 
-            return "terminó";
+            return collection;
+
         }
     }
 }

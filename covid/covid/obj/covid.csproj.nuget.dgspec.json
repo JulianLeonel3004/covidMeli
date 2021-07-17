@@ -45,6 +45,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.5, )"
@@ -235,6 +239,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

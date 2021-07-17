@@ -1,4 +1,5 @@
 ﻿using Model.People;
+using Services.DTO_s;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Services.Interfaces
 {
     public interface IPeopleService
     {
-        Task<IList<Person>> GetAllAsync();
+        Task<IList<PersonDTO>> GetAllAsync();
     }
 }

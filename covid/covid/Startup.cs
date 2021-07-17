@@ -11,11 +11,18 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Persistence;
 using Persistence.Repositories.Implementations;
 using Persistence.Repositories.Interfaces;
 using Repository;
+using Services.Assembler.CountryAssembler;
+using Services.Assembler.DnaAssmbler;
+using Services.Assembler.People;
+using Services.Assembler.ResultAssembler;
+using Services.ConfigService;
 using Services.Implementations;
 using Services.Interfaces;
+using Services.Profiler;
 
 namespace covid
 {
@@ -33,8 +40,12 @@ namespace covid
         {
             services.AddDbContext<AplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IPeopleService, PeopleService>();
-            services.AddTransient<IPeopleRepository, PeopleRepository>();
+            services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
+
+            ConfigPeristence.injectionRepositoty(services);
+
+            ConfigService.injectionService(services);
+            ConfigService.injectionAssembler(services);
 
             services.AddControllers();
         }

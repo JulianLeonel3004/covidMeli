@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Services/1.0.0": {
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "Model": "1.0.0",
           "Persistence": "1.0.0"
         },
@@ -15,7 +16,19 @@
           "Services.dll": {}
         }
       },
-      "Microsoft.CSharp/4.5.0": {},
+      "AutoMapper/10.1.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.1.1.0"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Data.SqlClient/2.0.1": {
         "dependencies": {
           "Microsoft.Data.SqlClient.SNI.runtime": "2.0.1",
@@ -246,7 +259,7 @@
       },
       "Microsoft.Identity.Client/4.14.0": {
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.CSharp": "4.7.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
           "System.Net.NameResolution": "4.3.0",
           "System.Private.Uri": "4.3.2",
@@ -350,7 +363,7 @@
       },
       "Newtonsoft.Json/10.0.1": {
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.CSharp": "4.7.0",
           "System.Collections": "4.3.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
@@ -554,7 +567,7 @@
           "System.Linq.Expressions": "4.3.0",
           "System.ObjectModel": "4.3.0",
           "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit": "4.7.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
           "System.Reflection.TypeExtensions": "4.3.0",
@@ -638,7 +651,7 @@
           "System.Linq": "4.3.0",
           "System.ObjectModel": "4.3.0",
           "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit": "4.7.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
@@ -729,15 +742,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.Emit/4.3.0": {
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
+      "System.Reflection.Emit/4.7.0": {},
       "System.Reflection.Emit.ILGeneration/4.3.0": {
         "dependencies": {
           "System.Reflection": "4.3.0",
@@ -1041,7 +1046,7 @@
           "System.IO": "4.3.0",
           "System.Linq": "4.3.0",
           "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit": "4.7.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
@@ -1077,12 +1082,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.CSharp/4.5.0": {
+    "AutoMapper/10.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
-      "path": "microsoft.csharp/4.5.0",
-      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+      "sha512": "sha512-uMgbqOdu9ZG5cIOty0C85hzzayBH2i9BthnS5FlMqKtMSHDv4ts81a2jS1VFaDBVhlBeIqJ/kQKjQY95BZde9w==",
+      "path": "automapper/10.1.1",
+      "hashPath": "automapper.10.1.1.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.Data.SqlClient/2.0.1": {
       "type": "package",
@@ -1490,12 +1502,12 @@
       "path": "system.reflection/4.3.0",
       "hashPath": "system.reflection.4.3.0.nupkg.sha512"
     },
-    "System.Reflection.Emit/4.3.0": {
+    "System.Reflection.Emit/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
-      "path": "system.reflection.emit/4.3.0",
-      "hashPath": "system.reflection.emit.4.3.0.nupkg.sha512"
+      "sha512": "sha512-VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
+      "path": "system.reflection.emit/4.7.0",
+      "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
       "type": "package",

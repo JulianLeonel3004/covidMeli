@@ -18,24 +18,12 @@ namespace Persistence.Repositories.Implementations
         {
             this.context = context;
         }
-        public IList<Person> GetAllAsync()
+        public async Task<IList<Person>> GetAllAsync()
         {
-            //var collection =  await _context.People
-            //      .OrderByDescending(x => x.Id).ToListAsync();
-            try
-            {
-                var collection = context.Set<Person>().ToList();
-                return collection;
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-                
-                return new List<Person>();
-            }
-
-            
-;
+           return await context.People
+                    .Include(x => x.Country)
+                    .Include(x => x.Result)
+                    .OrderByDescending(x => x.Id).ToListAsync();
         }
     }
 }
