@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace Services.Assembler.GenericAssembler
 {
-    public class GenericAssembler<T1, T2> : IGenericAssembler<T1, T2> where T1 : Generic where T2 : GenericDTO, new()
+    public class GenericAssembler<T1, T2> : IGenericAssembler<T1, T2> where T1 : Generic, new() where T2 : GenericDTO, new()
     {
 
         public virtual T2 dtoAssembler(T1 entity)
@@ -19,6 +19,16 @@ namespace Services.Assembler.GenericAssembler
             dto.Description = entity.Description;
 
             return dto;
+        }
+
+        public virtual T1 entityAssembler(T2 dto)
+        {
+            T1 entity = new T1();
+
+            entity.Id = dto.Id.Value;
+            entity.Description = dto.Description;
+
+            return entity;
         }
 
         public virtual IList<T2> listDtoAssembler(IList<T1> listEntity)
@@ -33,5 +43,16 @@ namespace Services.Assembler.GenericAssembler
             return listDto;
         }
 
+        public virtual IList<T1> listentiTyAssembler(IList<T2> listDto)
+        {
+            List<T1> listEntity = new List<T1>();
+
+            foreach(T2 dto in listDto)
+            {
+                listEntity.Add(entityAssembler(dto));
+            }
+
+            return listEntity;
+        }
     }
 }

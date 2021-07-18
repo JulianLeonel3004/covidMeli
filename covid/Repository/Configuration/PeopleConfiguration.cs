@@ -14,14 +14,12 @@ namespace Repository.Configuration
         {
             base.Configure(builder);
             builder.ToTable("People", "dbo");
-            builder.Property(x => x.Description).HasColumnName("name");
+            builder.Property(x => x.Description).HasColumnName("Name");
 
             builder.HasOne(x => x.Country).WithMany().HasForeignKey(x => x.IdCountry);
             builder.HasOne(x => x.Result).WithMany().HasForeignKey(x => x.IdResult);
 
-            builder.Ignore(x => x.IdCountry);
-            builder.Ignore(x => x.IdDna);
-            builder.Ignore(x => x.IdResult);
+            builder.Ignore(x => x.Dna);
 
         }
     }

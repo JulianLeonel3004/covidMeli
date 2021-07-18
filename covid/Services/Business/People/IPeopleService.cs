@@ -10,5 +10,6 @@ namespace Services.Interfaces
     public interface IPeopleService
     {
         Task<IList<PersonDTO>> GetAllAsync();
+        void insertPerson(PersonDTO personDTO);
     }
 }

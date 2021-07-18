@@ -7,5 +7,10 @@ namespace Model.MasterModel
 {
     public class Dna:Generic
     {
+        public Dna() { }
+        public Dna(string desctiption) 
+        {
+            this.Description = desctiption;
+        }
     }
 }

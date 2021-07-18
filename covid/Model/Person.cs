@@ -9,11 +9,11 @@ namespace Model.People
 {
     public class Person : Generic
     {
-        public string IdCountry { get; set; }
-        public string IdResult { get; set; }
-        public string IdDna { get; set; }
+        public int IdCountry { get; set; }
+        public int IdResult { get; set; }
         public Country Country { get; set; }
         public Result Result { get; set; }
+        public List<Dna> Dna { get;set; } 
 
     }
 }

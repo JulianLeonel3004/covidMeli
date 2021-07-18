@@ -12,7 +12,7 @@ namespace Persistence.Configuration
         public override void Configure(EntityTypeBuilder<Dna> builder)
         {
             base.Configure(builder);
-            builder.ToTable("Dna", "dbo");
+            builder.ToTable("DNA", "dbo");
         }
     }
 }

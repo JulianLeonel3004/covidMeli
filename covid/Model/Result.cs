@@ -7,5 +7,10 @@ namespace Model.MasterModel
 {
     public class Result:Generic
     {
+        public Result() { }
+        public Result(string description) 
+        {
+            this.Description = description;
+        }
     }
 }

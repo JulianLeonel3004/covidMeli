@@ -11,7 +11,7 @@ using Services.Interfaces;
 namespace covid.Controllers
 {
     [ApiController]
-    [Route("covid")]
+    [Route("covid/cheks")]
     public class CovidController : ControllerBase
     {
         private readonly ILogger<CovidController> _logger;
@@ -25,16 +25,19 @@ namespace covid.Controllers
 
         [HttpGet]
 
-        //public string Get()
-        //{
-        //    return "corre";
-        //}
         public async Task<IList<PersonDTO>> Get()
         {
              var collection = await peopleService.GetAllAsync();
 
             return collection;
 
+        }
+
+        [HttpPost]
+        public void Post([FromBody] PersonDTO personDTO)
+        {
+            peopleService.insertPerson(personDTO);
+           
         }
     }
 }

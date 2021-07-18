@@ -10,5 +10,7 @@ namespace Services.Assembler.GenericAssembler
     {
         T2 dtoAssembler(T1 entity);
         IList<T2> listDtoAssembler(IList<T1> listEntity);
+        T1 entityAssembler(T2 dto);
+        IList<T1> listentiTyAssembler(IList<T2> listDto);
     }
 }

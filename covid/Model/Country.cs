@@ -7,5 +7,10 @@ namespace Model.MasterModel
 {
     public class Country:Generic
     {
+        public Country() { }
+        public Country(string description)
+        {
+            this.Description = description;
+        }
     }
 }

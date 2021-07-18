@@ -12,7 +12,7 @@ namespace Persistence.Repositories.Implementations
 {
     public class PeopleRepository : IPeopleRepository
     {
-        private readonly AplicationDbContext context;  ///Inyección de dependencia del entity framework
+        private readonly AplicationDbContext context; 
 
         public PeopleRepository(AplicationDbContext context)
         {
@@ -24,6 +24,28 @@ namespace Persistence.Repositories.Implementations
                     .Include(x => x.Country)
                     .Include(x => x.Result)
                     .OrderByDescending(x => x.Id).ToListAsync();
+        }
+
+        public async Task<Person> GetById(int id)
+        {
+            return await context.People
+                   .Include(x => x.Country)
+                   .Include(x => x.Result)
+                   .Where(x => x.Id == id)
+                   .OrderByDescending(x => x.Id).SingleAsync();
+        }
+
+        public void insert(Person person)
+        {
+            try
+            {
+                context.Set<Person>().Add(person);
+                context.SaveChanges();
+
+            }catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
