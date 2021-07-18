@@ -17,7 +17,7 @@ GO
 IF NOT EXISTS ( SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'Results') 
 BEGIN
 	create table Results(
-		Id int NOT NULL IDENTITY(1,1),
+		Id int NOT NULL,
 		Description varchar(50) NOT NULL,
 		primary key(Id)
 	);

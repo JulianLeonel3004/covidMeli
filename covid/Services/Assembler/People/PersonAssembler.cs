@@ -30,16 +30,12 @@ namespace Services.Assembler.People
         {
             PersonDTO personDTO = new PersonDTO();
 
-            //personDTO.id = entity.Id;
-            //personDTO.name = entity.Description;
-            //person
-
-        //     public int? id { get; set; }
-        //public string name { get; set; }
-        //public string country { get; set; }
-        //public List<string> dna { get; set; }
-        //public string result { get; set; }
-
+            personDTO.Id = entity.Id;
+            personDTO.Name = entity.Description;
+            personDTO.Country = entity.Country.Description;
+            personDTO.Dna = assemblerListDna(entity.Dna);
+            personDTO.Result = entity.Result.Description;
+            
             return personDTO;
         }
 
@@ -70,6 +66,21 @@ namespace Services.Assembler.People
         public IList<Person> listEntityAssembler(IList<PersonDTO> peopleDto)
         {
             throw new NotImplementedException();
+        }
+
+        private List<string> assemblerListDna(List<Dna> dnas)
+        {
+            List<string> newDnas = new List<string>();
+
+            if (dnas == null)
+                return newDnas;
+
+            foreach(Dna dna in dnas)
+            {
+                newDnas.Add(dna.Description);
+            }
+
+            return newDnas;
         }
     }
 }

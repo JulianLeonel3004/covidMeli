@@ -34,9 +34,9 @@ namespace covid.Controllers
         }
 
         [HttpPost]
-        public void Post([FromBody] PersonDTO personDTO)
+        public PersonDTO Post([FromBody] PersonDTO personDTO)
         {
-            peopleService.insertPerson(personDTO);
+           return peopleService.insertPerson(personDTO);
            
         }
     }

@@ -7,6 +7,7 @@ namespace Model.MasterModel
 {
     public class Dna:Generic
     {
+        public static char[] DNAC = { 'A', 'T', 'C', 'G' };
         public Dna() { }
         public Dna(string desctiption) 
         {

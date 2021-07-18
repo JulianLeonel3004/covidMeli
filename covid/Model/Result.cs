@@ -7,6 +7,9 @@ namespace Model.MasterModel
 {
     public class Result:Generic
     {
+        public const int INFECTED = 1;
+        public const int HELTHY = 2;
+        public const int INMUNE = 3;
         public Result() { }
         public Result(string description) 
         {

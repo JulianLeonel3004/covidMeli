@@ -13,6 +13,7 @@ using Services.DTO_s;
 using Services.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ namespace Services.Implementations
 {
     public class PeopleService : IPeopleService
     {
-        
+
         private IPeopleRepository peopleRepository;
         private ICountryRepository countryRepository;
         private IResultRepository resultRepository;
@@ -31,7 +32,7 @@ namespace Services.Implementations
         private IPersonAssembler personAssembler;
         private ICountryAssembler countryAssembler;
 
-        public PeopleService(IPeopleRepository peopleRepository, 
+        public PeopleService(IPeopleRepository peopleRepository,
             IPersonAssembler personAssembler,
              ICountryRepository countryRepository,
              IResultRepository resultRepository,
@@ -50,20 +51,24 @@ namespace Services.Implementations
 
         public async Task<IList<PersonDTO>> GetAllAsync()
         {
-            var collection =  await peopleRepository.GetAllAsync();
+            IList<Person> collection = await peopleRepository.GetAllAsync();
+
             var collectionDt = personAssembler.listDtoAssembler(collection);
 
             return collectionDt;
         }
 
-        public void insertPerson(PersonDTO personDTO)
+        public PersonDTO insertPerson(PersonDTO personDTO)
         {
-            Person person = getInfoPerson(personDTO);
-            person.Description = personDTO.Name;
-            person.IdCountry = person.IdCountry;
-            person.IdResult = evaluateResult(person.Dna);
+            Person person = getInfoPerson(personDTO); //country y dna
 
-            if (person.IdCountry == 0)
+            person.Description = personDTO.Name;
+            person.Result = generateResult(person.Dna);
+            person.IdResult = person.Result.Id;
+
+            if (person.Country != null)
+                person.IdCountry = person.Country.Id;
+            else
             {
                 Country country = new Country(personDTO.Country);
                 countryRepository.insert(country);
@@ -75,7 +80,8 @@ namespace Services.Implementations
 
             insertDna(person.Dna);
             insertDnaPeople(person);
-            
+
+            return personAssembler.dtoAssembler(person);
 
 
         }
@@ -85,12 +91,11 @@ namespace Services.Implementations
             Person person = new Person();
 
             person.Country = countryRepository.getByDescription(personDTO.Country);
-            person.Result = resultRepository.getByID(1);
             person.Dna = getDna(personDTO.Dna);
 
             return person;
         }
-        
+
         private List<Dna> getDna(IList<string> dnaDescriptions)
         {
             if (dnaDescriptions == null || dnaDescriptions.Count == 0)
@@ -113,9 +118,13 @@ namespace Services.Implementations
 
         private void insertDnaPeople(Person person)
         {
+
+            if (person.Dna == null)
+                return;
+
             List<DnaPeople> dnaPeople = new List<DnaPeople>();
 
-            foreach(Dna dna in person.Dna)
+            foreach (Dna dna in person.Dna)
             {
                 dnaPeople.Add(new DnaPeople(dna.Id, person.Id));
             }
@@ -132,14 +141,98 @@ namespace Services.Implementations
 
         }
 
-        private int evaluateResult(List<Dna> dnas)
+        private Result generateResult(List<Dna> dnas)
         {
-            Result res = new Result("infected");
-            resultRepository.insert(res);
+            int sequence = 0, idDna = 0;
 
-            return res.Id;
+            sequence = sequenceRow(dnas) + sequenceColumn(dnas);
+            
+            if (sequence >= 4)
+                idDna = Result.INMUNE;
+            else if (sequence < 2)
+                idDna = Result.HELTHY;
+            else
+                idDna = Result.INFECTED;
+
+            return resultRepository.getByID(idDna);
         }
 
+        private int sequenceRow(List<Dna> dnas)
+        {
+            int sequence = 0;
+
+            foreach (Dna dna in dnas)
+            {
+         
+                if (countCounsecutive(dna.Description) == 4)
+                    sequence++;
+
+                if (sequence == 4)
+                   break;
+
+            }
+
+            return sequence;
+        }
+
+        private int sequenceColumn(List<Dna> dnas)
+        {
+            int totalDnas = dnas.Count;
+            int j = 0;
+            string concatenate = "";
+            List<Dna> newDnas = new List<Dna>();
+
+            for (int i = 0; i < totalDnas; i++)
+            {
+                    concatenate += dnas[i].Description.Substring(j,1);
+
+                if (i == totalDnas - 1)
+                {
+                    newDnas.Add(new Dna(concatenate));
+                    concatenate = "";
+                    if (j == totalDnas - 1)
+                        break;
+
+                    i = -1;
+                    j++;
+                }
+
+            }
+
+            return sequenceRow(newDnas);
+        }
+
+
+        private int countCounsecutive(string description)
+        {
+            char[] des = description.ToArray();
+            char? prev = null;
+
+            int auxRepeat = 0;
+            int repeat = 0;
+
+            foreach (char act in des)
+            {
+                if (prev != null && prev == act)
+                    auxRepeat++;
+                else
+                {
+                    if (auxRepeat > repeat)
+                        repeat = auxRepeat;
+
+                    auxRepeat = 0;
+                }
+
+                prev = act;
+
+            }
+
+
+            if (auxRepeat > repeat)
+                repeat = auxRepeat;
+
+            return repeat+1;
+        }
 
     }
 }
