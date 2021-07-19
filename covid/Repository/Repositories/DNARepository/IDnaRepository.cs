@@ -8,5 +8,6 @@ namespace Persistence.Repositories.DNARepository
 {
     public interface IDnaRepository:IGenericRepository<Dna>
     {
+       
     }
 }

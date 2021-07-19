@@ -11,7 +11,7 @@ using Services.Interfaces;
 namespace covid.Controllers
 {
     [ApiController]
-    [Route("covid/cheks")]
+    [Route("covid/checks")]
     public class CovidController : ControllerBase
     {
         private readonly ILogger<CovidController> _logger;
