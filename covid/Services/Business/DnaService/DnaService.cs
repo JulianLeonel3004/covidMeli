@@ -41,5 +41,10 @@ namespace Services.Business.DnaService
 
 
         }
+
+        public Dna getById(int id)
+        {
+            return dnaRepository.getByID(id);
+        }
     }
 }

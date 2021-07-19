@@ -27,10 +27,15 @@ namespace covid.Controllers
 
         public async Task<IList<PersonDTO>> Get()
         {
-             var collection = await peopleService.GetAllAsync();
+            var collection = await peopleService.GetAllAsync();
 
             return collection;
 
+        }
+        [HttpGet("{id}")]
+        public async Task<PersonDTO> Get(int id)
+        {
+            return await peopleService.GetbyId(id);
         }
 
         [HttpPost]

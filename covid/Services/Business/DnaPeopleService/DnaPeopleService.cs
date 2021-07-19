@@ -17,6 +17,16 @@ namespace Services.Business.DnaPeopleService
             this.dnaPeopleRepository = dnaPeopleRepository;
         }
 
+        public IList<DnaPeople> getByDna(int id)
+        {
+            return dnaPeopleRepository.getByIdDna(id);
+        }
+
+        public IList<DnaPeople> getByPeople(int id)
+        {
+            return dnaPeopleRepository.getByIdPeople(id);
+        }
+
         public void insertDnaPeople(Person person)
         {
 

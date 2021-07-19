@@ -28,5 +28,10 @@ namespace Persistence.Repositories.DNARepository
             }
         }
 
+        public List<Dna> getAllById(int id)
+        {
+            return context.Set<Dna>().Where(x => x.Id == id).ToList();
+        }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using Model.MasterModel;
+﻿using Model;
+using Model.MasterModel;
 using Model.People;
 using Persistence.Repositories.Interfaces;
 using Services.Assembler.People;
@@ -9,6 +10,7 @@ using Services.Business.ResultService;
 using Services.DTO_s;
 using Services.Interfaces;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Services.Implementations
@@ -41,9 +43,41 @@ namespace Services.Implementations
         {
             IList<Person> collection = await peopleRepository.GetAllAsync();
 
-            var collectionDt = personAssembler.listDtoAssembler(collection);
+            IList<PersonDTO> collectionDt = personAssembler.listDtoAssembler(collection);
+
+            IList<DnaPeople> dnasP;
+
+            foreach(Person person in collection)
+            {
+                dnasP = dnaPeopleService.getByPeople(person.Id);
+
+                foreach (DnaPeople dp in dnasP)
+                {
+                    collectionDt.Where(x => x.Id == person.Id).Single().
+                        Dna.Add(dnaService.getById(dp.IdDna).Description);
+                }
+
+                dnasP = null;
+            }           
 
             return collectionDt;
+        }
+
+        public async Task<PersonDTO> GetbyId(int id)
+        {
+            Person person = await peopleRepository.GetById(id);
+
+            PersonDTO personDTO = personAssembler.dtoAssembler(person);
+
+            IList<DnaPeople> dnasP = dnaPeopleService.getByPeople(person.Id);
+
+            foreach (DnaPeople dp in dnasP)
+            {
+                personDTO.Dna.Add(dnaService.getById(dp.IdDna).Description);
+            }
+
+            return personDTO;
+
         }
 
         public PersonDTO insertPerson(PersonDTO personDTO)

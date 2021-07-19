@@ -9,5 +9,6 @@ namespace Services.Business.DnaService
     {
         void insertDnas(List<Dna> dnas);
         List<Dna> getDnaByDescriptions(IList<string> dnaDescriptions);
+        Dna getById(int id);
     }
 }
