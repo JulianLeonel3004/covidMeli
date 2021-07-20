@@ -12,6 +12,6 @@ namespace Services.Interfaces
         Task<IList<PersonDTO>> GetAllAsync();
         Task<PersonDTO> GetbyId(int id);
         PersonDTO insertPerson(PersonDTO personDTO);
-        Task<IList<PersonDTO>> GetByFilter(int key, string value, string value2);
+        Task<IList<PersonDTO>> GetByFilter(int key, string value);
     }
 }

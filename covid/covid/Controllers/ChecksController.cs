@@ -24,32 +24,55 @@ namespace covid.Controllers
         [HttpGet]
         public async Task<IList<PersonDTO>> Get(int key, string value, string value2)
         {
-            var collection = await peopleService.GetAllAsync();
-
-            return collection;
+            try
+            {
+                return await peopleService.GetAllAsync();
+            }
+            catch(Exception e)
+            {
+                return new List<PersonDTO>();
+            }
 
         }
 
         [HttpGet("{id:int}")]
         public async Task<PersonDTO> Get(int id)
         {
-            return await peopleService.GetbyId(id);
+            try
+            {
+                return await peopleService.GetbyId(id);
+
+            }catch(Exception e)
+            {
+                return new PersonDTO();
+            }
         }
 
         [HttpPost]
         public PersonDTO Post([FromBody] PersonDTO personDTO)
         {
-            return peopleService.insertPerson(personDTO);
+            try
+            {
+                return peopleService.insertPerson(personDTO);
 
+            }catch(Exception e)
+            {
+                return new PersonDTO();
+            }
         }
 
 
       
         [HttpGet("{search}")]
-        public async Task<IList<PersonDTO>> search(int key, string value, string value2)
+        public async Task<IList<PersonDTO>> search(int key, string value)
         {
-            //TODO: Adaptar servicio a las comas
-            return await peopleService.GetByFilter(key, value, value2);
+            try
+            {
+                return await peopleService.GetByFilter(key, value);
+            }catch(Exception e)
+            {
+                return new List<PersonDTO>();
+            }
         }
     }
 }
