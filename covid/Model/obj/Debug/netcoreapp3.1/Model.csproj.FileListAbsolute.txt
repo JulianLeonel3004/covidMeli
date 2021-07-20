@@ -1,9 +1,9 @@
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\bin\Debug\netcoreapp3.1\Model.deps.json
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\bin\Debug\netcoreapp3.1\Model.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\bin\Debug\netcoreapp3.1\Model.pdb
-C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.pdb
+C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.csproj.AssemblyReference.cache

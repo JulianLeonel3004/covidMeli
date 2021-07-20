@@ -12,19 +12,16 @@ namespace covid.Controllers
 {
     [ApiController]
     [Route("covid/checks")]
-    public class CovidController : ControllerBase
+    public class ChecksController : ControllerBase
     {
-        private readonly ILogger<CovidController> _logger;
         private IPeopleService peopleService { get; set; }
 
-        public CovidController(ILogger<CovidController> logger, IPeopleService peopleService)
+        public ChecksController( IPeopleService peopleService)
         {
-            _logger = logger;
             this.peopleService = peopleService;
         }
 
         [HttpGet]
-
         public async Task<IList<PersonDTO>> Get()
         {
             var collection = await peopleService.GetAllAsync();
@@ -32,6 +29,7 @@ namespace covid.Controllers
             return collection;
 
         }
+
         [HttpGet("{id}")]
         public async Task<PersonDTO> Get(int id)
         {

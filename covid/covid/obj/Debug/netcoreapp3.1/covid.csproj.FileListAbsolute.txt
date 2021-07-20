@@ -1,13 +1,11 @@
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\covid.exe
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\covid.deps.json
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\covid.runtimeconfig.json
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\covid.runtimeconfig.dev.json
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\covid.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\covid.pdb
-C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.csprojAssemblyReference.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.AssemblyInfoInputs.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.AssemblyInfo.cs
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.RazorTargetAssemblyInfo.cache
@@ -139,3 +137,5 @@ C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\AutoM
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.csproj.CoreCompileInputs.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\covid.csproj.AssemblyReference.cache
+C:\Users\JLopez\Documents\MercadoLibre\covid\covid\obj\Debug\netcoreapp3.1\scopedcss\bundle\covid.styles.css

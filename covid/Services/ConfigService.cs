@@ -7,6 +7,7 @@ using Services.Business.CountryService;
 using Services.Business.DnaPeopleService;
 using Services.Business.DnaService;
 using Services.Business.ResultService;
+using Services.Business.StatService;
 using Services.Implementations;
 using Services.Interfaces;
 
@@ -22,6 +23,7 @@ namespace Services.ConfigService
             services.AddTransient<IDnaService, DnaService>();
             services.AddTransient<IPeopleService, PeopleService>();
             services.AddTransient<IResultService, ResultService>();
+            services.AddTransient<IStatService, StatService>();
 
         }
 

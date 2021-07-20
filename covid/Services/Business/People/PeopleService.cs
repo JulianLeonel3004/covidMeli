@@ -19,6 +19,7 @@ namespace Services.Implementations
     {
         private IPeopleRepository peopleRepository;
         private IPersonAssembler personAssembler;
+
         private ICountryService countryService;
         private IDnaService dnaService;
         private IDnaPeopleService dnaPeopleService;

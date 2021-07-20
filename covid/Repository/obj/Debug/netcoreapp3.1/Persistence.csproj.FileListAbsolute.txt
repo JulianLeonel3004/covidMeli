@@ -1,5 +1,4 @@
 C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\bin\Debug\netcoreapp3.1\Model.dll
-C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Debug\netcoreapp3.1\Persistence.csprojAssemblyReference.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Debug\netcoreapp3.1\Persistence.AssemblyInfoInputs.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Debug\netcoreapp3.1\Persistence.AssemblyInfo.cs
 C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\bin\Debug\netcoreapp3.1\Persistence.deps.json
@@ -10,3 +9,4 @@ C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Debug\netcoreapp3.1\
 C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Debug\netcoreapp3.1\Persistence.csproj.CopyComplete
 C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Debug\netcoreapp3.1\Persistence.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Debug\netcoreapp3.1\Persistence.pdb
+C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Debug\netcoreapp3.1\Persistence.csproj.AssemblyReference.cache
