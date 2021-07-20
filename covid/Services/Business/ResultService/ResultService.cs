@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Services.Business.ResultService
 {
@@ -14,6 +15,12 @@ namespace Services.Business.ResultService
         public ResultService(IResultRepository resultRepository)
         {
             this.resultRepository = resultRepository;
+        }
+
+
+        public Result getResultByDescription(string description)
+        {
+            return resultRepository.getByDescription(description);
         }
 
         public Result generateResult(List<Dna> dnas)
@@ -108,5 +115,7 @@ namespace Services.Business.ResultService
 
             return repeat + 1;
         }
+
+       
     }
 }

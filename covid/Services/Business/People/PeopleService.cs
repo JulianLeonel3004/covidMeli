@@ -64,6 +64,29 @@ namespace Services.Implementations
             return collectionDt;
         }
 
+        public  Task<IList<PersonDTO>> GetByFilter(int key, string value, string value2)
+        {
+            //TODO: Validar posibles nulls
+            if (value2 == null)
+                value2 = string.Empty;
+
+            switch (key)
+            {
+                case Person.FILTER_TYPE_COUNTRY:
+                    return (Task<IList<PersonDTO>>)personAssembler.listDtoAssembler( (IList<Person>) peopleRepository.GetByCountry(countryService.getByDescription(value2).Id, countryService.getByDescription(value2).Id));
+
+                case Person.FILTER_TYPE_RESULT:
+                    return (Task<IList<PersonDTO>>)personAssembler.listDtoAssembler((IList<Person>) peopleRepository.GetByResult(resultService.getResultByDescription(value).Id, countryService.getByDescription(value2).Id));
+
+                default:
+                    IList<PersonDTO> list = new List<PersonDTO>();
+                    return (Task<IList<PersonDTO>>)list;
+            }
+
+         
+        }
+
+        
         public async Task<PersonDTO> GetbyId(int id)
         {
             Person person = await peopleRepository.GetById(id);

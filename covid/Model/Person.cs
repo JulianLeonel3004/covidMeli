@@ -9,6 +9,9 @@ namespace Model.People
 {
     public class Person : Generic
     {
+        public const int FILTER_TYPE_COUNTRY = 1;
+        public const int FILTER_TYPE_RESULT = 2;
+        public const int FILTER_TYPE_BOTH = 3;
         public int IdCountry { get; set; }
         public int IdResult { get; set; }
         public Country Country { get; set; }
