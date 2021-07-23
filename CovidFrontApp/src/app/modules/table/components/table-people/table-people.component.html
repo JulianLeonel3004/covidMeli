@@ -1,0 +1,17 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">País</th>
+        <th scope="col">Resultado</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let person of people">
+      
+        <tr *ngIf="person">
+          <td>{{person.name}}</td>
+          <td>{{person.country}}</td>
+          <td>{{person.result}}</td>
+        </tr>
+    </tbody>
+  </table>
