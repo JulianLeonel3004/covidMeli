@@ -15,5 +15,11 @@ namespace Model.MasterModel
         {
             this.Description = description;
         }
+
+        public Result(int id, string description)
+        {
+            this.Id = Id;
+            this.Description = description;
+        }
     }
 }

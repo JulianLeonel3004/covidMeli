@@ -12,5 +12,10 @@ namespace Model.MasterModel
         {
             this.Description = description;
         }
+        public Country(int id, string description)
+        {
+            this.Id = id;
+            this.Description = description;
+        }
     }
 }

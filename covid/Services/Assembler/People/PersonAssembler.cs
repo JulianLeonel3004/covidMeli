@@ -1,29 +1,18 @@
-﻿using AutoMapper;
-using Model.MasterModel;
+﻿using Model.MasterModel;
 using Model.People;
-using Services.Assembler.CountryAssembler;
-using Services.Assembler.DnaAssmbler;
-using Services.Assembler.GenericAssembler;
-using Services.Assembler.ResultAssembler;
 using Services.DTO_s;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Services.Assembler.People
 {
-    public class PersonAssembler : IPersonAssembler // : GenericAssembler<Person, PersonDTO>, IPersonAssembler 
+    public class PersonAssembler : IPersonAssembler
     {
 
-        private ICountryAssembler countryAssembler { get; set; }
-        private IDnaAssembler dnaAssembler { get; set; }
-        private IResultAssembler resultAssembler { get; set; }
 
-        public PersonAssembler(ICountryAssembler countryAssembler, IDnaAssembler dnaAssembler, IResultAssembler resultAssembler)
+        public PersonAssembler()
         {
-            this.countryAssembler = countryAssembler;
-            this.dnaAssembler = dnaAssembler;
-            this.resultAssembler = resultAssembler;
+           
         }
 
         public PersonDTO dtoAssembler(Person entity)

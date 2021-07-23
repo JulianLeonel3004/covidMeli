@@ -22,7 +22,7 @@ namespace covid.Controllers
         }
 
         [HttpGet]
-        public async Task<IList<PersonDTO>> Get(int key, string value, string value2)
+        public async Task<IList<PersonDTO>> Get()
         {
             try
             {

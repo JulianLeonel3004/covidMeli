@@ -6,8 +6,8 @@ GO
 IF NOT EXISTS ( SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'Countries') 
 BEGIN
 create table Countries(
-	Id int NOT NULL,
-	Description varchar(6) NOT NULL,
+	Id int NOT NULL IDENTITY(1,1),
+	Name varchar(100) NOT NULL,
 	primary key(Id)
 );
 END

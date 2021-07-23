@@ -48,19 +48,6 @@ namespace Services.Implementations
 
             getDna(new List<DnaPeople>(), collection, collectionDt);
 
-            //foreach(Person person in collection)
-            //{
-            //    dnasP = dnaPeopleService.getByPeople(person.Id);
-
-            //    foreach (DnaPeople dp in dnasP)
-            //    {
-            //        collectionDt.Where(x => x.Id == person.Id).Single().
-            //            Dna.Add(dnaService.getById(dp.IdDna).Description);
-            //    }
-
-            //    dnasP = null;
-            //}           
-
             return collectionDt;
         }
 
@@ -100,8 +87,7 @@ namespace Services.Implementations
                 case Person.FILTER_TYPE_RESULT:
                     return filterResul(value1, value2);
                 default:
-                    IList<PersonDTO> list = new List<PersonDTO>();
-                    return (Task<IList<PersonDTO>>)list;
+                    return null;
             }
 
          

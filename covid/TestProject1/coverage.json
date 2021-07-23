@@ -1,0 +1,2030 @@
+{
+  "Model.dll": {
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\DnaPeople.cs": {
+      "Model.DnaPeople": {
+        "System.Int32 Model.DnaPeople::get_Id()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Model.DnaPeople::get_IdDna()": {
+          "Lines": {
+            "10": 12
+          },
+          "Branches": []
+        },
+        "System.Int32 Model.DnaPeople::get_IdPeople()": {
+          "Lines": {
+            "11": 12
+          },
+          "Branches": []
+        },
+        "System.Void Model.DnaPeople::.ctor(System.Int32,System.Int32)": {
+          "Lines": {
+            "12": 12,
+            "13": 12,
+            "14": 12,
+            "15": 12,
+            "16": 12
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\Person.cs": {
+      "Model.People.Person": {
+        "System.Int32 Model.People.Person::get_IdCountry()": {
+          "Lines": {
+            "15": 3
+          },
+          "Branches": []
+        },
+        "System.Int32 Model.People.Person::get_IdResult()": {
+          "Lines": {
+            "16": 12
+          },
+          "Branches": []
+        },
+        "Model.MasterModel.Country Model.People.Person::get_Country()": {
+          "Lines": {
+            "17": 16
+          },
+          "Branches": []
+        },
+        "Model.MasterModel.Result Model.People.Person::get_Result()": {
+          "Lines": {
+            "18": 10
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Model.MasterModel.Dna> Model.People.Person::get_Dna()": {
+          "Lines": {
+            "19": 23
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\Generic.cs": {
+      "Model.Generics.Generic": {
+        "System.Int32 Model.Generics.Generic::get_Id()": {
+          "Lines": {
+            "9": 65
+          },
+          "Branches": []
+        },
+        "System.String Model.Generics.Generic::get_Description()": {
+          "Lines": {
+            "10": 190
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\Country.cs": {
+      "Model.MasterModel.Country": {
+        "System.Void Model.MasterModel.Country::.ctor()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.Void Model.MasterModel.Country::.ctor(System.String)": {
+          "Lines": {
+            "11": 2,
+            "12": 2,
+            "13": 2,
+            "14": 2
+          },
+          "Branches": []
+        },
+        "System.Void Model.MasterModel.Country::.ctor(System.Int32,System.String)": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\Dna.cs": {
+      "Model.MasterModel.Dna": {
+        "System.Void Model.MasterModel.Dna::.ctor()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.Void Model.MasterModel.Dna::.ctor(System.String)": {
+          "Lines": {
+            "11": 18,
+            "12": 18,
+            "13": 18,
+            "14": 18
+          },
+          "Branches": []
+        },
+        "System.Void Model.MasterModel.Dna::.ctor(System.Int32,System.String)": {
+          "Lines": {
+            "16": 6,
+            "17": 6,
+            "18": 6,
+            "19": 6,
+            "20": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\Result.cs": {
+      "Model.MasterModel.Result": {
+        "System.Void Model.MasterModel.Result::.ctor()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Void Model.MasterModel.Result::.ctor(System.String)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        },
+        "System.Void Model.MasterModel.Result::.ctor(System.Int32,System.String)": {
+          "Lines": {
+            "19": 3,
+            "20": 3,
+            "21": 3,
+            "22": 3,
+            "23": 3
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Persistence.dll": {
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\ConfigPeristence.cs": {
+      "Persistence.ConfigPeristence": {
+        "System.Void Persistence.ConfigPeristence::injectionRepositoty(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Repositories\\ResultRepository\\ResultRepository.cs": {
+      "Persistence.Repositories.ResultRepository.ResultRepository": {
+        "System.Void Persistence.Repositories.ResultRepository.ResultRepository::.ctor(Repository.AplicationDbContext)": {
+          "Lines": {
+            "12": 1,
+            "13": 1,
+            "14": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Repositories\\PeopleRepository\\PeopleRepository.cs": {
+      "Persistence.Repositories.Implementations.PeopleRepository": {
+        "System.Void Persistence.Repositories.Implementations.PeopleRepository::insert(Model.People.Person)": {
+          "Lines": {
+            "57": 2,
+            "59": 2,
+            "60": 2,
+            "61": 2,
+            "63": 2,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 2
+          },
+          "Branches": []
+        },
+        "System.Void Persistence.Repositories.Implementations.PeopleRepository::.ctor(Repository.AplicationDbContext)": {
+          "Lines": {
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1
+          },
+          "Branches": []
+        }
+      },
+      "Persistence.Repositories.Implementations.PeopleRepository/<GetAllAsync>d__2": {
+        "System.Void Persistence.Repositories.Implementations.PeopleRepository/<GetAllAsync>d__2::MoveNext()": {
+          "Lines": {
+            "22": 2,
+            "23": 2,
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "27": 2
+          },
+          "Branches": []
+        }
+      },
+      "Persistence.Repositories.Implementations.PeopleRepository/<GetByCountry>d__3": {
+        "System.Void Persistence.Repositories.Implementations.PeopleRepository/<GetByCountry>d__3::MoveNext()": {
+          "Lines": {
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1
+          },
+          "Branches": []
+        }
+      },
+      "Persistence.Repositories.Implementations.PeopleRepository/<GetByResult>d__4": {
+        "System.Void Persistence.Repositories.Implementations.PeopleRepository/<GetByResult>d__4::MoveNext()": {
+          "Lines": {
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1
+          },
+          "Branches": []
+        }
+      },
+      "Persistence.Repositories.Implementations.PeopleRepository/<GetById>d__5": {
+        "System.Void Persistence.Repositories.Implementations.PeopleRepository/<GetById>d__5::MoveNext()": {
+          "Lines": {
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "53": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Repositories\\GenericRepository\\GenericRepository.cs": {
+      "Persistence.Repositories.GenericRepository.GenericRepository`1": {
+        "System.Collections.Generic.IList`1<T> Persistence.Repositories.GenericRepository.GenericRepository`1::getAll()": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        },
+        "T Persistence.Repositories.GenericRepository.GenericRepository`1::getByDescription(System.String)": {
+          "Lines": {
+            "25": 16,
+            "27": 16,
+            "28": 16,
+            "30": 7,
+            "31": 7,
+            "32": 7,
+            "33": 7,
+            "35": 16
+          },
+          "Branches": []
+        },
+        "T Persistence.Repositories.GenericRepository.GenericRepository`1::getByID(System.Int32)": {
+          "Lines": {
+            "38": 2,
+            "40": 2,
+            "41": 2,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 2
+          },
+          "Branches": []
+        },
+        "System.Void Persistence.Repositories.GenericRepository.GenericRepository`1::insert(T)": {
+          "Lines": {
+            "51": 1,
+            "52": 1,
+            "53": 1,
+            "54": 1
+          },
+          "Branches": []
+        },
+        "System.Void Persistence.Repositories.GenericRepository.GenericRepository`1::insertList(System.Collections.Generic.IList`1<T>)": {
+          "Lines": {
+            "57": 2,
+            "58": 18,
+            "59": 6,
+            "60": 6,
+            "61": 6,
+            "63": 2,
+            "64": 2
+          },
+          "Branches": [
+            {
+              "Line": 58,
+              "Offset": 44,
+              "EndOffset": 11,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 58,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Persistence.Repositories.GenericRepository.GenericRepository`1::.ctor(Repository.AplicationDbContext)": {
+          "Lines": {
+            "14": 3,
+            "15": 3,
+            "16": 3,
+            "17": 3
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Repositories\\DNARepository\\DnaRepository.cs": {
+      "Persistence.Repositories.DNARepository.DnaRepository": {
+        "Model.MasterModel.Dna Persistence.Repositories.DNARepository.DnaRepository::getByID(System.Int32)": {
+          "Lines": {
+            "18": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Model.MasterModel.Dna> Persistence.Repositories.DNARepository.DnaRepository::getAllById(System.Int32)": {
+          "Lines": {
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": []
+        },
+        "System.Void Persistence.Repositories.DNARepository.DnaRepository::.ctor(Repository.AplicationDbContext)": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Repositories\\DnaPeopleRepository\\DnaPeopleRepository.cs": {
+      "Persistence.Repositories.DnaPeopleRepository.DnaPeopleRepository": {
+        "System.Collections.Generic.IList`1<Model.DnaPeople> Persistence.Repositories.DnaPeopleRepository.DnaPeopleRepository::getAll()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<Model.DnaPeople> Persistence.Repositories.DnaPeopleRepository.DnaPeopleRepository::getByIdDna(System.Int32)": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<Model.DnaPeople> Persistence.Repositories.DnaPeopleRepository.DnaPeopleRepository::getByIdPeople(System.Int32)": {
+          "Lines": {
+            "28": 4,
+            "29": 4,
+            "30": 4
+          },
+          "Branches": []
+        },
+        "System.Void Persistence.Repositories.DnaPeopleRepository.DnaPeopleRepository::insert(Model.DnaPeople)": {
+          "Lines": {
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0
+          },
+          "Branches": []
+        },
+        "System.Void Persistence.Repositories.DnaPeopleRepository.DnaPeopleRepository::insertList(System.Collections.Generic.IList`1<Model.DnaPeople>)": {
+          "Lines": {
+            "39": 2,
+            "40": 30,
+            "41": 12,
+            "42": 12,
+            "43": 12,
+            "45": 2,
+            "46": 2
+          },
+          "Branches": [
+            {
+              "Line": 40,
+              "Offset": 44,
+              "EndOffset": 11,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 12
+            },
+            {
+              "Line": 40,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Persistence.Repositories.DnaPeopleRepository.DnaPeopleRepository::.ctor(Repository.AplicationDbContext)": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Repositories\\CountryRepository\\CountryRepository.cs": {
+      "Persistence.Repositories.CountryRepository.CountryRepository": {
+        "System.Void Persistence.Repositories.CountryRepository.CountryRepository::.ctor(Repository.AplicationDbContext)": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Configuration\\CountriesConfiguration.cs": {
+      "Persistence.Configuration.CountriesConfiguration": {
+        "System.Void Persistence.Configuration.CountriesConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Model.MasterModel.Country>)": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "17": 1,
+            "18": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Configuration\\DnaConfiguration.cs": {
+      "Persistence.Configuration.DnaConfiguration": {
+        "System.Void Persistence.Configuration.DnaConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Model.MasterModel.Dna>)": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Configuration\\DnaPeopleConfiguration.cs": {
+      "Persistence.Configuration.DnaPeopleConfiguration": {
+        "System.Void Persistence.Configuration.DnaPeopleConfiguration::.ctor(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Model.DnaPeople>)": {
+          "Lines": {
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Configuration\\GenericConfiguration.cs": {
+      "Persistence.Configuration.GenericConfiguration`1": {
+        "System.Void Persistence.Configuration.GenericConfiguration`1::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<T>)": {
+          "Lines": {
+            "13": 4,
+            "14": 4,
+            "15": 4,
+            "16": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Configuration\\ResultsConfigurations.cs": {
+      "Persistence.Configuration.ResultsConfigurations": {
+        "System.Void Persistence.Configuration.ResultsConfigurations::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Model.MasterModel.Result>)": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\AplicationDbContext.cs": {
+      "Repository.AplicationDbContext": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<Model.People.Person> Repository.AplicationDbContext::get_People()": {
+          "Lines": {
+            "21": 7
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Model.MasterModel.Dna> Repository.AplicationDbContext::get_Dna()": {
+          "Lines": {
+            "22": 1
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Model.MasterModel.Country> Repository.AplicationDbContext::get_Countries()": {
+          "Lines": {
+            "23": 1
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Model.MasterModel.Result> Repository.AplicationDbContext::get_Results()": {
+          "Lines": {
+            "24": 4
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Model.DnaPeople> Repository.AplicationDbContext::get_DnaPeople()": {
+          "Lines": {
+            "25": 1
+          },
+          "Branches": []
+        },
+        "System.Void Repository.AplicationDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "30": 1,
+            "31": 1,
+            "34": 1,
+            "36": 1
+          },
+          "Branches": []
+        },
+        "System.Void Repository.AplicationDbContext::ModelConfig(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "39": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "46": 1,
+            "49": 1
+          },
+          "Branches": []
+        },
+        "System.Void Repository.AplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Repository.AplicationDbContext>)": {
+          "Lines": {
+            "15": 1,
+            "16": 1,
+            "17": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Repository\\Configuration\\PeopleConfiguration.cs": {
+      "Repository.Configuration.PeopleConfiguration": {
+        "System.Void Repository.Configuration.PeopleConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Model.People.Person>)": {
+          "Lines": {
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "19": 1,
+            "20": 1,
+            "22": 1,
+            "24": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Services.dll": {
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\Profiler\\AutoMapperProfile.cs": {
+      "Services.Profiler.AutoMapperProfile": {
+        "System.Void Services.Profiler.AutoMapperProfile::.ctor()": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\DTO's\\PersonDTO.cs": {
+      "Services.DTO_s.PersonDTO": {
+        "System.Nullable`1<System.Int32> Services.DTO_s.PersonDTO::get_Id()": {
+          "Lines": {
+            "11": 10
+          },
+          "Branches": []
+        },
+        "System.String Services.DTO_s.PersonDTO::get_Name()": {
+          "Lines": {
+            "12": 26
+          },
+          "Branches": []
+        },
+        "System.String Services.DTO_s.PersonDTO::get_Country()": {
+          "Lines": {
+            "13": 27
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.String> Services.DTO_s.PersonDTO::get_Dna()": {
+          "Lines": {
+            "14": 26
+          },
+          "Branches": []
+        },
+        "System.String Services.DTO_s.PersonDTO::get_Result()": {
+          "Lines": {
+            "15": 24
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\DTO's\\StatsDTO.cs": {
+      "Services.DTO_s.StatsDTO": {
+        "System.Int32 Services.DTO_s.StatsDTO::get_Healthy()": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        },
+        "System.Int32 Services.DTO_s.StatsDTO::get_Infected()": {
+          "Lines": {
+            "10": 2
+          },
+          "Branches": []
+        },
+        "System.Int32 Services.DTO_s.StatsDTO::get_Inmune()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\DTO's\\GenericDto\\GenericDTO.cs": {
+      "Services.DTO_s.GenericDto.GenericDTO": {
+        "System.Nullable`1<System.Int32> Services.DTO_s.GenericDto.GenericDTO::get_Id()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String Services.DTO_s.GenericDto.GenericDTO::get_Description()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\ConfigService.cs": {
+      "Services.ConfigService.ConfigService": {
+        "System.Void Services.ConfigService.ConfigService::injectionService(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "28": 0
+          },
+          "Branches": []
+        },
+        "System.Void Services.ConfigService.ConfigService::injectionAssembler(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "31": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\Business\\People\\PeopleService.cs": {
+      "Services.Implementations.PeopleService": {
+        "System.Void Services.Implementations.PeopleService::getDna(System.Collections.Generic.IList`1<Model.DnaPeople>,System.Collections.Generic.IList`1<Model.People.Person>,System.Collections.Generic.IList`1<Services.DTO_s.PersonDTO>)": {
+          "Lines": {
+            "55": 3,
+            "56": 15,
+            "57": 3,
+            "58": 3,
+            "60": 9,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "66": 3,
+            "67": 3,
+            "69": 3
+          },
+          "Branches": [
+            {
+              "Line": 56,
+              "Offset": 184,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 3
+            },
+            {
+              "Line": 60,
+              "Offset": 159,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 62,
+              "Offset": 83,
+              "EndOffset": 85,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 62,
+              "Offset": 83,
+              "EndOffset": 109,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 159,
+              "EndOffset": 161,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 3
+            },
+            {
+              "Line": 56,
+              "Offset": 184,
+              "EndOffset": 189,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 3
+            }
+          ]
+        },
+        "System.Threading.Tasks.Task`1<System.Collections.Generic.IList`1<Services.DTO_s.PersonDTO>> Services.Implementations.PeopleService::GetByFilter(System.Int32,System.String)": {
+          "Lines": {
+            "72": 3,
+            "73": 3,
+            "74": 0,
+            "77": 3,
+            "79": 3,
+            "80": 3,
+            "83": 3,
+            "86": 1,
+            "88": 1,
+            "90": 1,
+            "94": 3
+          },
+          "Branches": [
+            {
+              "Line": 73,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 73,
+              "Offset": 7,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 80,
+              "Offset": 32,
+              "EndOffset": 34,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 3
+            },
+            {
+              "Line": 80,
+              "Offset": 32,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 83,
+              "Offset": 51,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            },
+            {
+              "Line": 83,
+              "Offset": 51,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 83,
+              "Offset": 58,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 83,
+              "Offset": 58,
+              "EndOffset": 86,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            }
+          ]
+        },
+        "Services.DTO_s.PersonDTO Services.Implementations.PeopleService::insertPerson(Services.DTO_s.PersonDTO)": {
+          "Lines": {
+            "114": 2,
+            "115": 2,
+            "117": 2,
+            "118": 2,
+            "119": 2,
+            "121": 2,
+            "122": 1,
+            "124": 1,
+            "125": 1,
+            "126": 1,
+            "127": 1,
+            "129": 1,
+            "131": 2,
+            "133": 2,
+            "134": 2,
+            "136": 2,
+            "139": 2
+          },
+          "Branches": [
+            {
+              "Line": 121,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 121,
+              "Offset": 75,
+              "EndOffset": 97,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "Model.People.Person Services.Implementations.PeopleService::getInfoPerson(Services.DTO_s.PersonDTO)": {
+          "Lines": {
+            "142": 2,
+            "143": 2,
+            "145": 2,
+            "146": 2,
+            "148": 2,
+            "149": 2
+          },
+          "Branches": []
+        },
+        "System.Void Services.Implementations.PeopleService::.ctor(Persistence.Repositories.Interfaces.IPeopleRepository,Services.Assembler.People.IPersonAssembler,Services.Business.CountryService.ICountryService,Services.Business.DnaService.IDnaService,Services.Business.DnaPeopleService.IDnaPeopleService,Services.Business.ResultService.IResultService)": {
+          "Lines": {
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1
+          },
+          "Branches": []
+        }
+      },
+      "Services.Implementations.PeopleService/<GetAllAsync>d__7": {
+        "System.Void Services.Implementations.PeopleService/<GetAllAsync>d__7::MoveNext()": {
+          "Lines": {
+            "44": 1,
+            "45": 1,
+            "47": 1,
+            "49": 1,
+            "51": 1,
+            "52": 1
+          },
+          "Branches": []
+        }
+      },
+      "Services.Implementations.PeopleService/<GetbyId>d__10": {
+        "System.Void Services.Implementations.PeopleService/<GetbyId>d__10::MoveNext()": {
+          "Lines": {
+            "97": 1,
+            "98": 1,
+            "100": 1,
+            "102": 1,
+            "104": 3,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "109": 1,
+            "111": 1
+          },
+          "Branches": [
+            {
+              "Line": 104,
+              "Offset": 318,
+              "EndOffset": 232,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 318,
+              "EndOffset": 320,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "Services.Implementations.PeopleService/<filterCountry>d__13": {
+        "System.Void Services.Implementations.PeopleService/<filterCountry>d__13::MoveNext()": {
+          "Lines": {
+            "153": 1,
+            "154": 1,
+            "155": 1,
+            "157": 1,
+            "158": 1,
+            "159": 1,
+            "161": 1,
+            "162": 1,
+            "164": 1,
+            "165": 1,
+            "167": 1,
+            "168": 1
+          },
+          "Branches": [
+            {
+              "Line": 154,
+              "Offset": 25,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 154,
+              "Offset": 25,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 108,
+              "EndOffset": 110,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 158,
+              "Offset": 108,
+              "EndOffset": 127,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 162,
+              "Offset": 282,
+              "EndOffset": 284,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 162,
+              "Offset": 282,
+              "EndOffset": 298,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 162,
+              "Offset": 296,
+              "EndOffset": 298,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 162,
+              "Offset": 296,
+              "EndOffset": 309,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 164,
+              "Offset": 354,
+              "EndOffset": 356,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 164,
+              "Offset": 354,
+              "EndOffset": 385,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "Services.Implementations.PeopleService/<filterResul>d__14": {
+        "System.Void Services.Implementations.PeopleService/<filterResul>d__14::MoveNext()": {
+          "Lines": {
+            "172": 1,
+            "173": 1,
+            "175": 1,
+            "176": 1,
+            "178": 1,
+            "180": 1,
+            "182": 1
+          },
+          "Branches": [
+            {
+              "Line": 173,
+              "Offset": 25,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 173,
+              "Offset": 25,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\Business\\StatService\\StatService.cs": {
+      "Services.Business.StatService.StatService": {
+        "Persistence.Repositories.Interfaces.IPeopleRepository Services.Business.StatService.StatService::get_peopleRepository()": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "Services.DTO_s.StatsDTO Services.Business.StatService.StatService::mapToStatDto(System.Collections.Generic.IList`1<Model.People.Person>)": {
+          "Lines": {
+            "28": 1,
+            "29": 1,
+            "31": 1,
+            "32": 0,
+            "34": 4,
+            "35": 4,
+            "36": 4,
+            "38": 1,
+            "39": 1
+          },
+          "Branches": [
+            {
+              "Line": 31,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 31,
+              "Offset": 13,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Services.Business.StatService.StatService::.ctor(Persistence.Repositories.Interfaces.IPeopleRepository)": {
+          "Lines": {
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1
+          },
+          "Branches": []
+        }
+      },
+      "Services.Business.StatService.StatService/<getStats>d__5": {
+        "System.Void Services.Business.StatService.StatService/<getStats>d__5::MoveNext()": {
+          "Lines": {
+            "20": 1,
+            "21": 1,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\Business\\ResultService\\ResultService.cs": {
+      "Services.Business.ResultService.ResultService": {
+        "Model.MasterModel.Result Services.Business.ResultService.ResultService::getResultByDescription(System.String)": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": []
+        },
+        "Model.MasterModel.Result Services.Business.ResultService.ResultService::generateResult(System.Collections.Generic.List`1<Model.MasterModel.Dna>)": {
+          "Lines": {
+            "27": 2,
+            "28": 4,
+            "30": 2,
+            "32": 2,
+            "33": 0,
+            "34": 2,
+            "35": 0,
+            "37": 2,
+            "39": 2,
+            "40": 2
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 30,
+              "EndOffset": 32,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 30,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 34,
+              "Offset": 42,
+              "EndOffset": 44,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 42,
+              "EndOffset": 48,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Int32 Services.Business.ResultService.ResultService::sequenceRow(System.Collections.Generic.List`1<Model.MasterModel.Dna>)": {
+          "Lines": {
+            "43": 4,
+            "44": 4,
+            "46": 60,
+            "47": 24,
+            "49": 24,
+            "50": 4,
+            "52": 24,
+            "53": 0,
+            "55": 24,
+            "57": 4,
+            "58": 4
+          },
+          "Branches": [
+            {
+              "Line": 46,
+              "Offset": 65,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 24
+            },
+            {
+              "Line": 49,
+              "Offset": 39,
+              "EndOffset": 41,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 49,
+              "Offset": 39,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 24
+            },
+            {
+              "Line": 52,
+              "Offset": 53,
+              "EndOffset": 57,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 24
+            },
+            {
+              "Line": 52,
+              "Offset": 53,
+              "EndOffset": 67,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            },
+            {
+              "Line": 46,
+              "Offset": 65,
+              "EndOffset": 67,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Int32 Services.Business.ResultService.ResultService::sequenceColumn(System.Collections.Generic.List`1<Model.MasterModel.Dna>)": {
+          "Lines": {
+            "61": 2,
+            "62": 2,
+            "63": 2,
+            "64": 2,
+            "65": 2,
+            "67": 144,
+            "68": 72,
+            "69": 72,
+            "71": 72,
+            "72": 12,
+            "73": 12,
+            "74": 12,
+            "75": 12,
+            "76": 2,
+            "78": 10,
+            "79": 10,
+            "80": 10,
+            "82": 70,
+            "84": 2,
+            "85": 2
+          },
+          "Branches": [
+            {
+              "Line": 67,
+              "Offset": 126,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 72
+            },
+            {
+              "Line": 71,
+              "Offset": 66,
+              "EndOffset": 68,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 12
+            },
+            {
+              "Line": 75,
+              "Offset": 98,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 10
+            },
+            {
+              "Line": 71,
+              "Offset": 66,
+              "EndOffset": 110,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 70
+            },
+            {
+              "Line": 75,
+              "Offset": 98,
+              "EndOffset": 128,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 67,
+              "Offset": 126,
+              "EndOffset": 128,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Int32 Services.Business.ResultService.ResultService::countCounsecutive(System.String)": {
+          "Lines": {
+            "89": 24,
+            "90": 24,
+            "91": 24,
+            "93": 24,
+            "94": 24,
+            "96": 360,
+            "97": 144,
+            "98": 144,
+            "99": 32,
+            "101": 112,
+            "102": 112,
+            "103": 14,
+            "105": 112,
+            "106": 112,
+            "108": 144,
+            "110": 144,
+            "113": 24,
+            "114": 2,
+            "116": 24,
+            "117": 24
+          },
+          "Branches": [
+            {
+              "Line": 96,
+              "Offset": 160,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 144
+            },
+            {
+              "Line": 98,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 120
+            },
+            {
+              "Line": 98,
+              "Offset": 56,
+              "EndOffset": 58,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 98,
+              "Offset": 56,
+              "EndOffset": 70,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 120
+            },
+            {
+              "Line": 98,
+              "Offset": 44,
+              "EndOffset": 109,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 24
+            },
+            {
+              "Line": 98,
+              "Offset": 114,
+              "EndOffset": 116,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 32
+            },
+            {
+              "Line": 98,
+              "Offset": 114,
+              "EndOffset": 122,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 112
+            },
+            {
+              "Line": 102,
+              "Offset": 131,
+              "EndOffset": 133,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 14
+            },
+            {
+              "Line": 102,
+              "Offset": 131,
+              "EndOffset": 135,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 112
+            },
+            {
+              "Line": 96,
+              "Offset": 160,
+              "EndOffset": 165,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 24
+            },
+            {
+              "Line": 113,
+              "Offset": 173,
+              "EndOffset": 175,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 2
+            },
+            {
+              "Line": 113,
+              "Offset": 173,
+              "EndOffset": 177,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 24
+            }
+          ]
+        },
+        "System.Void Services.Business.ResultService.ResultService::.ctor(Persistence.Repositories.ResultRepository.IResultRepository)": {
+          "Lines": {
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\Business\\DnaService\\DnaService.cs": {
+      "Services.Business.DnaService.DnaService": {
+        "System.Collections.Generic.List`1<Model.MasterModel.Dna> Services.Business.DnaService.DnaService::getDnaByDescriptions(System.Collections.Generic.IList`1<System.String>)": {
+          "Lines": {
+            "18": 2,
+            "19": 2,
+            "20": 0,
+            "22": 2,
+            "24": 30,
+            "25": 12,
+            "26": 12,
+            "27": 12,
+            "28": 6,
+            "30": 6,
+            "31": 12,
+            "33": 2,
+            "34": 2
+          },
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 2,
+              "EndOffset": 4,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 19,
+              "Offset": 2,
+              "EndOffset": 15,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 18,
+              "EndOffset": 24,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 24,
+              "Offset": 107,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 12
+            },
+            {
+              "Line": 27,
+              "Offset": 73,
+              "EndOffset": 75,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 6
+            },
+            {
+              "Line": 27,
+              "Offset": 73,
+              "EndOffset": 86,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 6
+            },
+            {
+              "Line": 24,
+              "Offset": 107,
+              "EndOffset": 109,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Services.Business.DnaService.DnaService::insertDnas(System.Collections.Generic.List`1<Model.MasterModel.Dna>)": {
+          "Lines": {
+            "37": 2,
+            "38": 14,
+            "40": 2,
+            "43": 2
+          },
+          "Branches": []
+        },
+        "Model.MasterModel.Dna Services.Business.DnaService.DnaService::getById(System.Int32)": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        },
+        "System.Void Services.Business.DnaService.DnaService::.ctor(Persistence.Repositories.DNARepository.IDnaRepository)": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\Business\\DnaPeopleService\\DnaPeopleService.cs": {
+      "Services.Business.DnaPeopleService.DnaPeopleService": {
+        "System.Collections.Generic.IList`1<Model.DnaPeople> Services.Business.DnaPeopleService.DnaPeopleService::getByDna(System.Int32)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<Model.DnaPeople> Services.Business.DnaPeopleService.DnaPeopleService::getByPeople(System.Int32)": {
+          "Lines": {
+            "26": 4,
+            "27": 4,
+            "28": 4
+          },
+          "Branches": []
+        },
+        "System.Void Services.Business.DnaPeopleService.DnaPeopleService::insertDnaPeople(Model.People.Person)": {
+          "Lines": {
+            "31": 2,
+            "33": 2,
+            "34": 0,
+            "36": 2,
+            "38": 30,
+            "39": 12,
+            "40": 12,
+            "41": 12,
+            "43": 2,
+            "44": 2
+          },
+          "Branches": [
+            {
+              "Line": 33,
+              "Offset": 12,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 38,
+              "Offset": 78,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 12
+            },
+            {
+              "Line": 38,
+              "Offset": 78,
+              "EndOffset": 80,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 33,
+              "Offset": 12,
+              "EndOffset": 110,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Services.Business.DnaPeopleService.DnaPeopleService::.ctor(Persistence.Repositories.DnaPeopleRepository.IDnaPeopleRepository)": {
+          "Lines": {
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\Business\\CountryService\\CountryService.cs": {
+      "Services.Business.CountryService.CountryService": {
+        "Model.MasterModel.Country Services.Business.CountryService.CountryService::getByDescription(System.String)": {
+          "Lines": {
+            "18": 3,
+            "19": 3,
+            "20": 3
+          },
+          "Branches": []
+        },
+        "System.Void Services.Business.CountryService.CountryService::insert(Model.MasterModel.Country)": {
+          "Lines": {
+            "23": 1,
+            "24": 1,
+            "25": 1
+          },
+          "Branches": []
+        },
+        "System.Void Services.Business.CountryService.CountryService::.ctor(Persistence.Repositories.CountryRepository.ICountryRepository)": {
+          "Lines": {
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\Assembler\\People\\PersonAssembler.cs": {
+      "Services.Assembler.People.PersonAssembler": {
+        "Services.DTO_s.PersonDTO Services.Assembler.People.PersonAssembler::dtoAssembler(Model.People.Person)": {
+          "Lines": {
+            "19": 6,
+            "20": 6,
+            "22": 6,
+            "23": 6,
+            "24": 6,
+            "25": 6,
+            "26": 6,
+            "28": 6,
+            "29": 6
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<Services.DTO_s.PersonDTO> Services.Assembler.People.PersonAssembler::listDtoAssembler(System.Collections.Generic.IList`1<Model.People.Person>)": {
+          "Lines": {
+            "32": 3,
+            "33": 3,
+            "35": 15,
+            "36": 3,
+            "37": 3,
+            "38": 3,
+            "40": 3,
+            "41": 3
+          },
+          "Branches": [
+            {
+              "Line": 35,
+              "Offset": 46,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 35,
+              "Offset": 46,
+              "EndOffset": 48,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            }
+          ]
+        },
+        "Model.People.Person Services.Assembler.People.PersonAssembler::entityAssembler(Services.DTO_s.PersonDTO)": {
+          "Lines": {
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "51": 0,
+            "53": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<Model.People.Person> Services.Assembler.People.PersonAssembler::listEntityAssembler(System.Collections.Generic.IList`1<Services.DTO_s.PersonDTO>)": {
+          "Lines": {
+            "56": 0,
+            "57": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<System.String> Services.Assembler.People.PersonAssembler::assemblerListDna(System.Collections.Generic.List`1<Model.MasterModel.Dna>)": {
+          "Lines": {
+            "61": 6,
+            "62": 6,
+            "64": 6,
+            "65": 0,
+            "67": 90,
+            "68": 36,
+            "69": 36,
+            "70": 36,
+            "72": 6,
+            "73": 6
+          },
+          "Branches": [
+            {
+              "Line": 64,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 64,
+              "Offset": 13,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 67,
+              "Offset": 61,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 36
+            },
+            {
+              "Line": 67,
+              "Offset": 61,
+              "EndOffset": 63,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Void Services.Assembler.People.PersonAssembler::.ctor()": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Services\\Assembler\\GenericAssembler\\GenericAssembler.cs": {
+      "Services.Assembler.GenericAssembler.GenericAssembler`2": {
+        "T2 Services.Assembler.GenericAssembler.GenericAssembler`2::dtoAssembler(T1)": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        },
+        "T1 Services.Assembler.GenericAssembler.GenericAssembler`2::entityAssembler(T2)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<T2> Services.Assembler.GenericAssembler.GenericAssembler`2::listDtoAssembler(System.Collections.Generic.IList`1<T1>)": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": [
+            {
+              "Line": 38,
+              "Offset": 46,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 46,
+              "EndOffset": 48,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.IList`1<T1> Services.Assembler.GenericAssembler.GenericAssembler`2::listentiTyAssembler(System.Collections.Generic.IList`1<T2>)": {
+          "Lines": {
+            "47": 0,
+            "48": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0
+          },
+          "Branches": [
+            {
+              "Line": 50,
+              "Offset": 46,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 46,
+              "EndOffset": 48,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "TestProject1.dll": {
+    "C:\\Users\\JLopez\\.nuget\\packages\\microsoft.net.test.sdk\\16.9.4\\build\\netcoreapp2.1\\Microsoft.NET.Test.Sdk.Program.cs": {
+      "AutoGeneratedProgram": {
+        "System.Void AutoGeneratedProgram::Main(System.String[])": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\TestProject1\\UnitTest1.cs": {
+      "TestProject1.Tests": {
+        "System.Void TestProject1.Tests::Setup()": {
+          "Lines": {
+            "39": 0,
+            "41": 0
+          },
+          "Branches": []
+        },
+        "System.Void TestProject1.Tests::Test1()": {
+          "Lines": {
+            "45": 0,
+            "51": 0,
+            "54": 0,
+            "56": 0,
+            "58": 0,
+            "60": 0,
+            "62": 0,
+            "64": 0,
+            "66": 0,
+            "68": 0,
+            "70": 0,
+            "71": 0
+          },
+          "Branches": []
+        }
+      },
+      "TestProject1.Tests/<TestGet>d__2": {
+        "System.Void TestProject1.Tests/<TestGet>d__2::MoveNext()": {
+          "Lines": {
+            "75": 0,
+            "77": 0,
+            "78": 0,
+            "80": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
