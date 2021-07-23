@@ -1,5 +1,3 @@
---create database covid;
-
 use covid;
 
 GO

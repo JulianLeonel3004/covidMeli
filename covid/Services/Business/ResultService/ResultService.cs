@@ -25,9 +25,11 @@ namespace Services.Business.ResultService
             if (dnas == null)
                 return false;
 
+            int size = dnas.Count();
+
             foreach (Dna dna in dnas)
             {
-                if (dna.Description.Length > Dna.MaxCharacters || !validateCharacters(dna.Description))
+                if (dna.Description.Length > Dna.MaxCharacters || !validateCharacters(dna.Description) || dna.Description.Length != size)
                     return false;
             }
 
