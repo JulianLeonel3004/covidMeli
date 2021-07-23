@@ -9,5 +9,6 @@ namespace Services.Business.ResultService
     {
         Result generateResult(List<Dna> dnas);
         Result getResultByDescription(string description);
+        bool validateDna(List<Dna> dnas);
     }
 }

@@ -22,56 +22,58 @@ namespace covid.Controllers
         }
 
         [HttpGet]
-        public async Task<IList<PersonDTO>> Get()
+        public async Task<ActionResult> Get() 
         {
             try
             {
-                return await peopleService.GetAllAsync();
+                return Ok(await peopleService.GetAllAsync());
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                return new List<PersonDTO>();
+                return NotFound(e.Message);
             }
 
         }
 
         [HttpGet("{id:int}")]
-        public async Task<PersonDTO> Get(int id)
+        public async Task<ActionResult> Get(int id)
         {
             try
             {
-                return await peopleService.GetbyId(id);
+                return Ok(await peopleService.GetbyId(id));
 
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
-                return new PersonDTO();
+                return NotFound(e.Message);
             }
         }
 
         [HttpPost]
-        public PersonDTO Post([FromBody] PersonDTO personDTO)
+        public ActionResult Post([FromBody] PersonDTO personDTO)
         {
             try
             {
-                return peopleService.insertPerson(personDTO);
+                return Ok(peopleService.insertPerson(personDTO));
 
             }catch(Exception e)
             {
-                return new PersonDTO();
+                return NotFound(e.Message);
             }
         }
 
 
       
         [HttpGet("{search}")]
-        public async Task<IList<PersonDTO>> search(int key, string value)
+        public async Task<ActionResult> search(int key, string value)
         {
             try
             {
-                return await peopleService.GetByFilter(key, value);
+                return Ok(await peopleService.GetByFilter(key, value));
+
             }catch(Exception e)
             {
-                return new List<PersonDTO>();
+                return NotFound(e.Message);
             }
         }
     }

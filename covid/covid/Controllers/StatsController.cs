@@ -20,11 +20,16 @@ namespace covid.Controllers
         } 
 
         [HttpGet]
-        public async Task<StatsDTO> Get()
+        public async Task<ActionResult> Get()
         {
-            var stats = await statService.getStats();
-
-            return stats;
+            try
+            {
+                return Ok(await statService.getStats());
+            }catch(Exception e)
+            {
+                return NotFound(e.Message);
+            }
+           
 
         }
     }

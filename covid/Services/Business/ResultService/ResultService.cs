@@ -1,14 +1,11 @@
 ﻿using Model.MasterModel;
 using Persistence.Repositories.ResultRepository;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Services.Business.ResultService
 {
-    public class ResultService:IResultService
+    public class ResultService : IResultService
     {
         private IResultRepository resultRepository;
 
@@ -22,6 +19,22 @@ namespace Services.Business.ResultService
         {
             return resultRepository.getByDescription(description);
         }
+
+        public bool validateDna(List<Dna> dnas)
+        {
+            if (dnas == null)
+                return false;
+
+            foreach (Dna dna in dnas)
+            {
+                if (dna.Description.Length > Dna.MaxCharacters || !validateCharacters(dna.Description))
+                    return false;
+            }
+
+            return true;
+        }
+
+     
 
         public Result generateResult(List<Dna> dnas)
         {
@@ -116,6 +129,18 @@ namespace Services.Business.ResultService
             return repeat + 1;
         }
 
-       
+
+        private bool validateCharacters(string description)
+        {
+            int count = 0;
+
+            for (int i = 0; i < Dna.Characters.Count(); i++)
+                count += description.ToArray().Where(x => x.Equals(Dna.Characters[i])).Count();
+
+            return count == Dna.MaxCharacters;
+        }
+
+
+
     }
 }

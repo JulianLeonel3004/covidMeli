@@ -151,6 +151,23 @@ namespace TestProject1
 
         }
 
+        [Test] 
+        public void PostInvalidateDnaTest()
+        {
+            PersonDTO personDTO = new PersonDTO();
+
+            string[] dnas = new string[] { "ATGCGA", "CGGTGC", "TTATGT", "AGAAGG", "CCCCTA", "POIUYW" };
+
+            personDTO.Country = "Argentina";
+            personDTO.Dna = createListString(dnas);
+            personDTO.Name = "Julian";
+
+            var p = peopleService.insertPerson(personDTO);
+
+           
+            Assert.IsTrue(p == null);
+        }
+
         [Test]
         public void PostTestCountryExist()
         {

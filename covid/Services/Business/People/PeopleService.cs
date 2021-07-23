@@ -112,7 +112,11 @@ namespace Services.Implementations
 
         public PersonDTO insertPerson(PersonDTO personDTO)
         {
+            
             Person person = getInfoPerson(personDTO); //country y dna
+
+            if (!resultService.validateDna(person.Dna))
+                return null;
 
             person.Description = personDTO.Name;
             person.Result = resultService.generateResult(person.Dna);
