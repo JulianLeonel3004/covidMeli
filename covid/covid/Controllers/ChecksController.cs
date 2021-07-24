@@ -65,11 +65,11 @@ namespace covid.Controllers
 
       
         [HttpGet("{search}")]
-        public async Task<ActionResult> search(int key, string value)
+        public async Task<ActionResult> search(int key, string values)
         {
             try
             {
-                return Ok(await peopleService.GetByFilter(key, value));
+                return Ok(await peopleService.GetByFilter(key, values));
 
             }catch(Exception e)
             {

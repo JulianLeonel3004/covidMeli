@@ -6,4 +6,3 @@ C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.pdb
-C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Debug\netcoreapp3.1\Model.csproj.AssemblyReference.cache

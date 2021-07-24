@@ -1,45 +1,42 @@
+<br>
+<br>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-1">
-            <h4>Filtrar</h4>
-        </div>
-    </div>
-    <br>
+<form  [formGroup]="formFilter"  (ngSubmit)="onSubmit()"  class="container">
+  
     <div class="row">
         <div class="col-md-2">
-            <label>Filtrar por:</label>
+            <label class="form-group">Filtrar:</label>
         </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <select (change)="changeFilters()" class="form-select" aria-label="Disabled select example"  formControlName="filterBy" >
+                <option *ngFor="let item of filtersBy" [value]="item.id">
+                    {{item.name}}
+                </option>
+            </select>
+        </div>
+
         <br>
-    </div>
-    <div class="row">
-        <div class="col-md-2">
-            <label>
-                <input type="radio" name="filter" value="1" (change)="changeFilter($event)">
-                País
-            </label>
-        </div>
-        <div class="col-md-3">
+        <br>
+
+        <div class="col-md-4">
+            <select class="form-select" aria-label="Disabled select example" formControlName="filter">
+                <option *ngFor="let item of filters" [value]="item">
+                    {{item}}
+                </option>
+            </select>
+
         </div>
 
-        <div class="col-md-3">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Paises</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-        </div>
-        <div class="col-md-3">
-            <button type="button" class="btn btn-primary">Primary</button>
+       
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-primary" [disabled]="formFilter.invalid">Aplicar</button>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-2">
-            <label>
-                <input type="radio" name="filter" value="2"  (change)="changeFilter($event)">
-                Resultado
-            </label>
-        </div>
-    </div>
-</div>
+
+    
+   
+</form>

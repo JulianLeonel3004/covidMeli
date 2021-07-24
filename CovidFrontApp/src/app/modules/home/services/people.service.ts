@@ -19,7 +19,9 @@ import { Person } from 'src/app/core/person';
     getPeopleByFilter(x:number, y:string, z?:string):Observable<any>{
       if(z == null)
         z = '';
-      return this.http.get('covid/checks/search?key='+ x +'&values='+ y +','+ z);
+      else
+        z = ','+ z;
+      return this.http.get('covid/checks/search?key='+ x +'&values='+ y + z);
     }
 
     getPerson(id:number):Observable<any>{ 

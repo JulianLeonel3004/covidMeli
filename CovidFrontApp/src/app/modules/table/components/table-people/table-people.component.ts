@@ -16,7 +16,6 @@ export class TablePeopleComponent implements OnInit {
   ngOnInit() {
     this.peopleService.getPeople().subscribe(item=>{
       this.people = item;
-      console.log(this.people)
     });
   }
 
