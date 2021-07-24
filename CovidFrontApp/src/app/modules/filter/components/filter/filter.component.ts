@@ -13,15 +13,10 @@ const FILTER_RESULT = 2;
 })
 export class FilterComponent implements OnInit {
 
-    //TODO: Que sean inputs
-  /*********************************************/
-  // results = [ 'infected', 'healthy', 'inmune'];
-  // countries = ['Argentina','Brasil'];
-  /*********************************************/
   @Input() countries:string[];
   @Input() results:string[];
 
-  @Output() filterOutput:EventEmitter<any> = new EventEmitter();
+  @Output() filterOutput:EventEmitter<any[]> = new EventEmitter();
 
   filtersBy = [new Generic(FILTER_COUNTRY,'País'), new Generic(FILTER_RESULT,'Resultado')];
   formFilter:FormGroup;
@@ -32,7 +27,7 @@ export class FilterComponent implements OnInit {
 
   ngOnInit() {
     this.formFilter =this.formBuilder.group({
-      filterBy: [FILTER_COUNTRY, [Validators.required]],
+      filterBy: [null, [Validators.required]],
       filter: [null, [Validators.required]]
     });
 
@@ -53,8 +48,8 @@ export class FilterComponent implements OnInit {
 
 
   private filter(){
-    this.peopleService.getPeopleByFilter(Number(this.formFilter.value.filterBy),this.formFilter.value.filter).subscribe(item=>{
-      this.filterOutput.emit(item);
+    this.peopleService.getPeopleByFilter(Number(this.formFilter.value.filterBy),this.formFilter.value.filter).subscribe(people=>{
+      this.filterOutput.emit(people);
     });
       
   }

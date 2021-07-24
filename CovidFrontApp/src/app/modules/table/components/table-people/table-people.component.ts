@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Person } from 'src/app/core/person';
-import { PeopleService } from 'src/app/modules/home/services/people.service';
 
 @Component({
   selector: 'app-table-people',
@@ -9,14 +8,11 @@ import { PeopleService } from 'src/app/modules/home/services/people.service';
 })
 export class TablePeopleComponent implements OnInit {
 
-  people:Array<Person> = [];
+  @Input() people:Person[];
 
-  constructor(private peopleService:PeopleService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.peopleService.getPeople().subscribe(item=>{
-      this.people = item;
-    });
   }
 
 }

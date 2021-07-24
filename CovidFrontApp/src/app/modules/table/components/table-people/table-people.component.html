@@ -1,6 +1,6 @@
-<table class="table table-hover">
-    <thead>
-      <tr>
+<table class="table table-hover container">
+    <thead class="gray" >
+      <tr class="center">
         <th scope="col">Nombre</th>
         <th scope="col">País</th>
         <th scope="col">Resultado</th>
@@ -8,10 +8,19 @@
     </thead>
     <tbody *ngFor="let person of people">
       
-        <tr *ngIf="person">
+        <tr class="center" *ngIf="person">
           <td>{{person.name}}</td>
           <td>{{person.country}}</td>
-          <td>{{person.result}}</td>
+
+          <td [ngClass]="{'red': person.result == 'infected', 
+                          'green':person.result =='healthy', 
+                          'blue':person.result == 'inmune'}">
+
+            <span *ngIf="person.result == 'infected'">Infectado</span>
+            <span *ngIf="person.result == 'healthy'">Sano</span>
+            <span *ngIf="person.result == 'inmune'">Inmune</span>
+          </td>
+          
         </tr>
     </tbody>
   </table>

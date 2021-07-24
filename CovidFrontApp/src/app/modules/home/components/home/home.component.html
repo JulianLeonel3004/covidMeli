@@ -1,3 +1,11 @@
-<app-filter></app-filter>
+<app-stats>
+</app-stats>
 
-<!-- <app-table-people></app-table-people> -->
+<app-filter 
+[countries]="countries" 
+[results]="results" 
+(filterOutput)="reloadPeople($event)">
+</app-filter>
+
+<app-table-people [people]="people">
+</app-table-people>

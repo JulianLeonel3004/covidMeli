@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TableModule } from '../table/table.module';
 import { FilterModule } from '../filter/filter.module';
+import { StatModule } from '../stat/stat.module';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ RouterModule.forChild(routes)
     CommonModule,
     RouterModule.forChild(routes),
     TableModule,
-    FilterModule
+    FilterModule,
+    StatModule
   ],
   exports: [HomeComponent]
 })
