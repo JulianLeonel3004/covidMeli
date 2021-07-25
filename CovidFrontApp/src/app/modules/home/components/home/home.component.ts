@@ -50,7 +50,9 @@ export class HomeComponent implements OnInit {
   }
 
   openModal(){
-    this.modalService.open(CreateComponent, { backdrop: true });
+    this.modalService.open(CreateComponent, { backdrop: true }).result.then((result) => {
+     alert(result);
+    });
 
   }
   

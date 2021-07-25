@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { Person } from 'src/app/core/person';
 
 @Component({
   selector: 'app-view',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
-  constructor() { }
+  @Input() person:Person;
+  constructor(private modal: NgbActiveModal) { }
 
   ngOnInit() {
   }
+
+  dismiss(){
+    this.modal.dismiss('confirm click');
+  }
+
 
 }

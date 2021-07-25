@@ -6,7 +6,6 @@ import { TableModule } from '../table/table.module';
 import { FilterModule } from '../filter/filter.module';
 import { StatModule } from '../stat/stat.module';
 import { ModelAnalysisModule } from '../model-analysis/model-analysis.module';
-import { ViewComponent } from '../model-analysis/components/view/view.component';
 import { CreateComponent } from '../model-analysis/components/create/create.component';
 
 
@@ -30,6 +29,6 @@ RouterModule.forChild(routes)
     ModelAnalysisModule
   ],
   exports: [HomeComponent],
-  entryComponents: [CreateComponent, ViewComponent]
+  entryComponents: [CreateComponent]
 })
 export class HomeModule { }

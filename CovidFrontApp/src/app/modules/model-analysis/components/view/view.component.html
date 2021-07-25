@@ -1,1 +1,55 @@
-<p>view works!</p>
+
+  <div class="modal-body">
+    
+    <span (click)="dismiss()" class="back">< Atras</span>
+    <h4 class="modal-title" id="modal-title"><b>Detalle</b></h4>
+
+      <div class="row">
+        <div class="col-md-3">
+            <label class="form-group"><b>Id:</b></label>
+        </div>
+        <div class="col-md-6">
+            <span class="form-group">{{person.id}}</span>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-3">
+            <label class="form-group"><b>Nombre:</b></label>
+        </div>
+        <div class="col-md-6">
+            <span class="form-group">{{person.name}}</span>
+        </div>
+      </div>
+
+      <br>
+      
+      <div class="row">
+        <div class="col-md-3">
+            <label class="form-group"><b>País:</b></label>
+        </div>
+        <div class="col-md-6">
+            <span class="form-group">{{person.country}}</span>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-3">
+          <label class="form-group"><b>ADN:</b></label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6" >         
+          <p class="form-group" *ngFor="let dna of person.dna; let i=index">{{dna}}</p>
+        </div>
+      </div>
+      <br>
+      
+  </div>
+

@@ -8,7 +8,7 @@
     </thead>
     <tbody *ngFor="let person of people">
       
-        <tr class="center" *ngIf="person">
+        <tr class="center pointer" *ngIf="person" (click)="openPerson(person)" >
           <td>{{person.name}}</td>
           <td>{{person.country}}</td>
 
