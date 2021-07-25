@@ -1,11 +1,18 @@
-<app-stats>
-</app-stats>
+<div class="container"> 
+    <app-stats>
+    </app-stats>
 
-<app-filter 
-[countries]="countries" 
-[results]="results" 
-(filterOutput)="reloadPeople($event)">
-</app-filter>
+    <app-filter 
+    [countries]="countries" 
+    [results]="results" 
+    (filterOutput)="reloadPeople($event)">
+    </app-filter>
 
-<app-table-people [people]="people">
-</app-table-people>
+    <button class="btn btn-primary " 
+    (click)="openModal()">
+    Cargar Análisis
+    </button>
+
+    <app-table-people [people]="people">
+    </app-table-people>
+</div>

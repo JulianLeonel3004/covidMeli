@@ -5,6 +5,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { TableModule } from '../table/table.module';
 import { FilterModule } from '../filter/filter.module';
 import { StatModule } from '../stat/stat.module';
+import { ModelAnalysisModule } from '../model-analysis/model-analysis.module';
+import { ViewComponent } from '../model-analysis/components/view/view.component';
+import { CreateComponent } from '../model-analysis/components/create/create.component';
 
 
 const routes: Routes = [
@@ -23,8 +26,10 @@ RouterModule.forChild(routes)
     RouterModule.forChild(routes),
     TableModule,
     FilterModule,
-    StatModule
+    StatModule,
+    ModelAnalysisModule
   ],
-  exports: [HomeComponent]
+  exports: [HomeComponent],
+  entryComponents: [CreateComponent, ViewComponent]
 })
 export class HomeModule { }

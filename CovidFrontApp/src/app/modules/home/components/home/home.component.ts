@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Person } from 'src/app/core/person';
-import { StatsCovid } from 'src/app/core/stats';
+import { CreateComponent } from 'src/app/modules/model-analysis/components/create/create.component';
 import { PeopleService } from '../../services/people.service';
 
 @Component({
@@ -14,7 +15,8 @@ export class HomeComponent implements OnInit {
   countries: string[];
   results:string[];
 
-  constructor(private peopleService:PeopleService) { }
+  constructor(private peopleService:PeopleService,
+    private modalService:NgbModal) { }
 
   ngOnInit() {
       this.peopleService.getPeople().subscribe(people => {
@@ -47,5 +49,9 @@ export class HomeComponent implements OnInit {
     this.people = people;
   }
 
+  openModal(){
+    this.modalService.open(CreateComponent, { backdrop: true });
+
+  }
   
 }

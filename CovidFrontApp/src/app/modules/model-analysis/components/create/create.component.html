@@ -1,0 +1,56 @@
+ <div class="modal-header">
+    <h4 class="modal-title" id="modal-title">Nuevo Análisis</h4>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="formPerson" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-md-12">
+            <label class="form-group">Nombre: </label>
+            <input type="text" class="form-control" formControlName="name" maxlength="100">
+            <span class="text-danger" *ngIf="formPerson.controls.name.touched && formPerson.controls.name.invalid">
+              *El Nombre es requerido
+            </span>
+        </div>
+      </div>
+
+      <br>
+      
+      <div class="row">
+        <div class="col-md-12">
+            <label class="form-group">País: </label>
+            <input type="text" class="form-control" formControlName="country" maxlength="100">
+            <span class="text-danger" *ngIf="formPerson.controls.country.touched && formPerson.controls.country.invalid">
+              *El país es requerido
+            </span>
+        </div>
+      </div>
+
+      <br>
+
+
+      <div formArrayName="dnas">
+        <label class="form-group">ADN: </label>
+        <div *ngFor="let dna of dnas.controls; let i=index">         
+          <input type="text" class="form-control" [formControlName]="i" (keyup)="validate(i)" maxlength="6"> 
+          <span class="text-danger">{{errorDna[i]}}</span>
+          <br>
+        </div>
+      </div>
+
+
+
+
+
+      <br>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <button type="submit" class="btn btn-primary" [disabled]="formPerson.invalid || error">Crear</button>
+        </div>
+
+        <div class="col-md-6">
+          <button type="button" class="btn btn-outline-primary" (click)="modal.dismiss('cancel click')">Cancelar</button>
+        </div>
+      </div>
+    </form>
+  </div>
