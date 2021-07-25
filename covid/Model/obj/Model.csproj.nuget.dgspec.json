@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\Model.csproj": {}
+    "C:\\Users\\User\\Documents\\meli\\covid\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\Model.csproj": {
+    "C:\\Users\\User\\Documents\\meli\\covid\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\meli\\covid\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\JLopez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JLopez\\Documents\\MercadoLibre\\covid\\Model\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\meli\\covid\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\meli\\covid\\Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\JLopez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
