@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
     constructor(private http: HttpClient) { }
 
     getStats():Observable<any>{ 
-        return this.http.get( environment.Api_url +'covid/stats');
+        return this.http.get( environment.Api_url +'/covid/stats');
       }
   
 }
