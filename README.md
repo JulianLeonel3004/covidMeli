@@ -21,19 +21,20 @@ Los UTesting fueron realizados con NUnit y una base de datos en memoria.
 Ejecución Local.
 
 1. Descargar código de github desde el branch main.
-2. Dirigirse al directorio Script y ejecutar cada uno de los scripts en el orden que se muestra.
-4. Dirigirse al directorio covid y levantar el proyecto covid.sln.
-5. Compilar y correr el proyecto.
-8. Dirigirse al archivo environment.ts que se encuentra en CovidFrontApp/src/environments.
-9. Comentar la línea API_URL con la conexión remota y descomentar la línea API_URL con el localhost.
-10. En el Directorio CovidFrontApp, ejecutar el comando npm install, esperar la descarga y luego ng serve -o para ejecutarlo.
+2. Dirigirse al directorio Scripts y ejecutar cada uno de los scripts en el orden que se muestra.
+3. Dirigirse al directorio covid y levantar el proyecto covid.sln.
+4. Compilar y correr el proyecto.
+5. Dirigirse al archivo environment.ts que se encuentra en CovidFrontApp/src/environments.
+6. Comentar la línea API_URL con la conexión remota y descomentar la línea API_URL con el localhost.
+7. En el Directorio CovidFrontApp, ejecutar el comando npm install, esperar la descarga y luego ng serve -o para ejecutarlo.
 
 Nota: si ocurre un error de conexión de db, verificar en covid/covid/appsettings.json que la cadena de conexión en "DefaultConnection", esté apuntando a su base de datos local.
 
 ------------------------------------------------------------------------------------------
 Ejecución Remota con front local.
-Realizar pasos 9 y 10 de la ejecución local
+Realizar el paso 7 de la ejecución local.
 
+Nota: Si cambio el archivo environment, debe regresarlo a su estado original. Es decir, con API_URL apuntando a la conexión remota.
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
