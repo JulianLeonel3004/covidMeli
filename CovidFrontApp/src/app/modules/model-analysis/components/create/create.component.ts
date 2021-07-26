@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Person } from 'src/app/core/person';
@@ -12,7 +12,9 @@ const DNA_CHARACTER = [ 'A', 'T', 'C','G' ];
   styleUrls: ['./create.component.scss']
 })
 export class CreateComponent implements OnInit {
-  
+
+  @Output() reload = new EventEmitter<any>();
+
   formPerson:FormGroup;
   errorDna = [null, null, null, null, null, null];
   error = true;
@@ -56,7 +58,6 @@ export class CreateComponent implements OnInit {
   }
 
   create(){
-   // this.formPerson.value.dna = ["ATGCGA","CGGTAC","TTATGT","AGAAGG","CCCCTA","TCACTG"];
     let i = 0;
 
     this.formPerson.controls.dnas['controls'].forEach(x=>{
@@ -67,7 +68,7 @@ export class CreateComponent implements OnInit {
     let person:Person = new Person(this.formPerson.value);
 
     this.peopleService.insertPerson(person).subscribe(item => {
-      
+      this.reload.emit(true);
     });
     
   }

@@ -10,3 +10,15 @@ C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Release\netcoreapp3.
 C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Release\netcoreapp3.1\Persistence.csproj.CopyComplete
 C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Release\netcoreapp3.1\Persistence.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\Repository\obj\Release\netcoreapp3.1\Persistence.pdb
+C:\Users\User\Documents\meli\covid\Repository\bin\Release\netcoreapp3.1\Persistence.deps.json
+C:\Users\User\Documents\meli\covid\Repository\bin\Release\netcoreapp3.1\Persistence.dll
+C:\Users\User\Documents\meli\covid\Repository\bin\Release\netcoreapp3.1\Persistence.pdb
+C:\Users\User\Documents\meli\covid\Repository\bin\Release\netcoreapp3.1\Model.dll
+C:\Users\User\Documents\meli\covid\Repository\bin\Release\netcoreapp3.1\Model.pdb
+C:\Users\User\Documents\meli\covid\Repository\obj\Release\netcoreapp3.1\Persistence.csproj.AssemblyReference.cache
+C:\Users\User\Documents\meli\covid\Repository\obj\Release\netcoreapp3.1\Persistence.AssemblyInfoInputs.cache
+C:\Users\User\Documents\meli\covid\Repository\obj\Release\netcoreapp3.1\Persistence.AssemblyInfo.cs
+C:\Users\User\Documents\meli\covid\Repository\obj\Release\netcoreapp3.1\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\meli\covid\Repository\obj\Release\netcoreapp3.1\Persistence.csproj.CopyComplete
+C:\Users\User\Documents\meli\covid\Repository\obj\Release\netcoreapp3.1\Persistence.dll
+C:\Users\User\Documents\meli\covid\Repository\obj\Release\netcoreapp3.1\Persistence.pdb

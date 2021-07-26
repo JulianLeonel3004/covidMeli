@@ -7,3 +7,12 @@ C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Release\netcoreapp3.1\Mod
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Release\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Release\netcoreapp3.1\Model.dll
 C:\Users\JLopez\Documents\MercadoLibre\covid\Model\obj\Release\netcoreapp3.1\Model.pdb
+C:\Users\User\Documents\meli\covid\Model\bin\Release\netcoreapp3.1\Model.deps.json
+C:\Users\User\Documents\meli\covid\Model\bin\Release\netcoreapp3.1\Model.dll
+C:\Users\User\Documents\meli\covid\Model\bin\Release\netcoreapp3.1\Model.pdb
+C:\Users\User\Documents\meli\covid\Model\obj\Release\netcoreapp3.1\Model.csproj.AssemblyReference.cache
+C:\Users\User\Documents\meli\covid\Model\obj\Release\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\User\Documents\meli\covid\Model\obj\Release\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\User\Documents\meli\covid\Model\obj\Release\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\meli\covid\Model\obj\Release\netcoreapp3.1\Model.dll
+C:\Users\User\Documents\meli\covid\Model\obj\Release\netcoreapp3.1\Model.pdb

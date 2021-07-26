@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  Api_url:  "https://localhost:44318",
+  //Api_url:  "https://localhost:44318"
+  Api_url: "http://covid-app-services.azurewebsites.net/"
 };
 
 /*

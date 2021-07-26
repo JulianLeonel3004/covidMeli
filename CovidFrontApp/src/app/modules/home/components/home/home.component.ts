@@ -19,12 +19,15 @@ export class HomeComponent implements OnInit {
     private modalService:NgbModal) { }
 
   ngOnInit() {
-      this.peopleService.getPeople().subscribe(people => {
-        this.people = people; 
-        this.loadCountriesResults();
-      });
+     this.load();
   }
 
+  load(){
+    this.peopleService.getPeople().subscribe(people => {
+      this.people = people; 
+      this.loadCountriesResults();
+    });
+  }
 
   loadCountriesResults(){
     let countries = this.people.map(person => person.country);
@@ -45,15 +48,16 @@ export class HomeComponent implements OnInit {
   }
 
 
-  reloadPeople(people:Person[]){console.log(people);
+  reloadPeople(people:Person[]){
     this.people = people;
   }
 
   openModal(){
-    this.modalService.open(CreateComponent, { backdrop: true }).result.then((result) => {
-     alert(result);
-    });
-
+    const modal = this.modalService.open(CreateComponent, { backdrop: true });
+    modal.componentInstance.reload.subscribe(item=>{
+      if(item)
+        this.load();
+    }); 
   }
   
 }

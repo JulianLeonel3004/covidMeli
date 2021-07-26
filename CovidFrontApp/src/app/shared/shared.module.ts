@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ModalGeneralComponent } from './components/modal-general/modal-general.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [ModalGeneralComponent],
+  declarations: [],
   imports: [
     NgbModule,
     CommonModule,
@@ -14,7 +13,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule
   ],
   exports:[
-    ModalGeneralComponent,
     FormsModule,
     ReactiveFormsModule
     

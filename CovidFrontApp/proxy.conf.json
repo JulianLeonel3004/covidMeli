@@ -1,8 +1,0 @@
-{
-    "/covid/*":{
-        "target":"https://localhost:44318/",
-        "secure":false,
-        "logLevel":"debug",
-        "changeOrigin": true
-    }
-}
