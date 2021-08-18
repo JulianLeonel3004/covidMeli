@@ -1,13 +1,18 @@
+IMPORTANTE: La conexión con AZURE ya no está disponible, utilice la conexión local
+-----------------------------------------------------------------------------------------
+
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
 Stack:
+------------------------------------------------------------------------------------------
 IDE - Microsoft Visual Studio Community 2019
 Versión 16.10.3
 
 BD - Sql Server
 
 Frontend: Angular 9 
+
 ------------------------------------------------------------------------------------------
 
 
@@ -19,6 +24,7 @@ Los UTesting fueron realizados con NUnit y una base de datos en memoria.
 ------------------------------------------------------------------------------------------
 
 Ejecución Local.
+------------------------------------------------------------------------------------------
 
 1. Descargar código de github desde el branch main.
 2. Dirigirse al directorio Scripts y ejecutar cada uno de los scripts en el orden que se muestra.
@@ -32,6 +38,7 @@ Nota: si ocurre un error de conexión de db, verificar en covid/covid/appsetting
 
 ------------------------------------------------------------------------------------------
 Ejecución Remota con front local.
+------------------------------------------------------------------------------------------
 Realizar el paso 7 de la ejecución local.
 
 Nota: Si cambio el archivo environment, debe regresarlo a su estado original. Es decir, con API_URL apuntando a la conexión remota.
@@ -39,6 +46,7 @@ Nota: Si cambio el archivo environment, debe regresarlo a su estado original. Es
 ------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------
 Notas sobre las decisiones del proyecto:
+------------------------------------------------------------------------------------------
 
 Paises: Al dejar a libre interpretación la cantidad de paises a la cual se le realiza este test, opté porque se guarde cada país que se ingrese, siempre y cuando no se encuentre en la base de datos previamente.
 Ej. Si ingreso "Argentina" para el país de una persona y luego para cualquier otra posterior se vuelve a repetir la nacionalidad, se guardaría la primera vez y no la segunda, utilizando como clave para ambas, el mismo registro.
